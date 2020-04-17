@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Grake_Pch</title>
+	<link href="css/styles.css" type="text/css" rel="stylesheet" />
+	<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script>
+		//百度统计
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?6e0713685b72fd5ac0907a2767586187";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+
+</head>
+
+<body>
+
+	<div class="nav">
+		<svg class="back" onclick="window.location.href='http://grakepch.com';" fill="#000000" height="28" viewBox="0 0 24 24" width="28"
+		 xmlns="http://www.w3.org/2000/svg">
+			<path d="M0 0h24v24H0z" fill="none" />
+			<path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+		</svg>
+
+		<div class="logo-container">
+			<img id="logo" class="logo-big" src="http://www.grakepch.com/logo/logo_big_HD.png" alt="Grake Pch">
+			<img id="logo" class="logo-mid" src="http://www.grakepch.com/logo/logo_mid_HD.png" alt="Grake Pch">
+			<img id="logo" class="logo-sml" src="http://www.grakepch.com/logo/logo_sml_HD.png" alt="Grake Pch">
+		</div>
+
+	</div>
+	<p class="text">
+		9-Squares 九宫格资源包最新版 [J.17.04a] 下载
+		<ul>
+			<li><a href="9-squares/download/9-Squares[J.17.04a]1.8.zip">9-Squares 九宫格 [J.17.04a] 1.8.x</a></li>
+			<li><a href="9-squares/download/9-Squares[J.17.04a]1.9~1.10.zip">9-Squares 九宫格 [J.17.04a] 1.9.x</a></li>
+			<li><a href="9-squares/download/9-Squares[J.17.04a]1.9~1.10.zip">9-Squares 九宫格 [J.17.04a] 1.10.x</a></li>
+			<li><a href="9-squares/download/9-Squares[J.17.04a]1.11~1.12.zip">9-Squares 九宫格 [J.17.04a] 1.11.x</a></li>
+			<li><a href="9-squares/download/9-Squares[J.17.04a]1.11~1.12.zip">9-Squares 九宫格 [J.17.04a] 1.12快照</a></li>
+		</ul>
+		右下角新的下载按钮也可以点哦，快来试试吧
+	</p>
+
+	<div id="db" class="download-button" onclick="display('download')">
+		<svg class="download" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+			<path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+			<path d="M0 0h24v24H0z" fill="none" />
+		</svg>
+	</div>
+
+	<div id="download">
+		<div class="v1_8" id="version" onclick="window.location.href='9-squares/download/9-Squares[J.17.04a]1.8.zip';">
+			<p class="download">1.8</p>
+		</div>
+		<div class="v1_9" id="version" onclick="window.location.href='9-squares/download/9-Squares[J.17.04a]1.9~1.10.zip';">
+			<p class="download">1.9</p>
+		</div>
+		<div class="v1_10" id="version" onclick="window.location.href='9-squares/download/9-Squares[J.17.04a]1.9~1.10.zip';">
+			<p class="download">1.10</p>
+		</div>
+		<div class="v1_11" id="version" onclick="window.location.href='9-squares/download/9-Squares[J.17.04a]1.11~1.12.zip';">
+			<p class="download">1.11</p>
+		</div>
+		<div class="v1_12" id="version" onclick="window.location.href='9-squares/download/9-Squares[J.17.04a]1.11~1.12.zip';">
+			<p class="download">1.12</p>
+		</div>
+	</div>
+
+
+
+	<script>
+			//"下载"按钮动画
+			function display(download) {
+				if (document.getElementsByClassName("v1_8")[0].style.bottom == "72px") {
+					document.getElementsByClassName("v1_8")[0].style.bottom = "380px";
+					document.getElementsByClassName("v1_9")[0].style.bottom = "320px";
+					document.getElementsByClassName("v1_10")[0].style.bottom = "260px";
+					document.getElementsByClassName("v1_11")[0].style.bottom = "200px";
+					document.getElementsByClassName("v1_12")[0].style.bottom = "140px";
+				} else {
+					document.getElementsByClassName("v1_8")[0].style.bottom = "72px";
+					document.getElementsByClassName("v1_9")[0].style.bottom = "72px";
+					document.getElementsByClassName("v1_10")[0].style.bottom = "72px";
+					document.getElementsByClassName("v1_11")[0].style.bottom = "72px";
+					document.getElementsByClassName("v1_12")[0].style.bottom = "72px";
+				}
+			}
+	</script>
+</body>
+
+</html>

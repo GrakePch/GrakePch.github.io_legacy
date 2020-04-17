@@ -1,0 +1,513 @@
+body {
+  font-family: Microsoft YaHei, PingFangSC-Regular;
+  margin: 0px;
+  line-height: 150%;
+}
+
+@font-face
+{
+font-family: Nexa;
+src: url(../../../assets/font/Nexa_Free_Bold-webfont.ttf)
+}
+
+p {
+	word-wrap: break-word;
+}
+
+div#container {
+  width: 100%;
+  height: 320px;
+  background-image: url(img/9S_bannerbg_new_1920x320.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #cdd2d3;
+  overflow: hidden;
+  position: absolute;
+  z-index: 99;
+}
+
+/*
+.frosted-glass {
+  width: 400px;
+  height: 320px;
+  left: 50%;
+  margin-left:-200px;
+  background: inherit;
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -ms-filter: blur(8px);
+  -o-filter: blur(8px);
+  filter: blur(8px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=8, MakeShadow=false);
+  position: absolute;
+  clip: rect(96px 392px 224px 8px);
+}
+
+.frosted-glass2 {
+  width: 384px;
+  height: 128px;
+  margin-top: 96px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(255,255,255,0.5);
+  position: relative;
+  display: block;
+}
+*/
+
+div#main-9S-icon {
+  margin-top: 96px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 128px;
+  width: 128px;
+  background-image: url(img/9S_icon.png);
+  background-size: 128px;
+}
+
+div#body {
+	width: 660px;
+	margin-top: 24px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+div#blank {
+  height: 320px;
+}
+
+/*导航栏*/
+
+div#fixed-nav {
+  width: 100%;
+  height: 64px;
+  position: fixed;
+  top: 0px;
+  background-color: #fff;
+}
+
+div#fixed-nav-body {
+  width: 660px;
+  height: 64px;
+  margin-top: 0px;
+  position: absolute;
+  left: 50%;
+  margin-left: -330px;
+}
+
+div#nav-9s-logo {
+  float: left;
+  width: 42px;
+  height: 42px;
+  margin-top: 11px;
+  margin-left: 11px;
+  background-image: url(img/9S_icon_dark.png);
+  background-size: contain;
+}
+
+div#download-button {
+  float: right;
+  margin-top: 25px;
+  margin-right: 11px;
+  height: 10px;
+  width: 106px;
+  background-image: url(img/download-word-pixel-en.png);
+  background-size: contain;
+  image-rendering: pixelated;
+  cursor: pointer;
+}
+
+div#download-button:hover {
+  border-width: 0px;
+  border-bottom-width: 3px;
+  border-style: solid;
+  border-color: #24292e;
+
+}
+
+div#nav {
+	width: 100%;
+	height: 64px;
+	margin-top: 0px;
+}
+
+div#nav> div#n1{
+	width: 100%;
+	height: 64px;
+	margin-top: 0px;
+}
+
+div#nav-body {
+  width: 660px;
+  height: 64px;
+	margin-left: auto;
+  margin-right: auto;
+	margin-top: 0px;
+}
+
+div#main-9S-title {
+  position: relative;
+  width: 308px;
+  height: 42px;
+  background-image: url(img/9S_title_en.png);
+  background-size: 100%;
+	margin-left: auto;
+  margin-right: auto;
+  top: 10px;
+}
+
+div#nav> div#n2{
+	width: 100%;
+	height: 64px;
+	margin-top: -64px;
+}
+
+/*div#home-button {
+  float: right;
+  width: 42px;
+  height: 42px;
+  margin-top: 11px;
+  margin-right: 11px;
+  background-image: url(img/home_button.png);
+  background-size: 42px; 
+  background-attachment: scroll;
+	transition: all 0.15s ease-in-out;
+}
+
+div#home-button:hover {
+  background-image: url(img/home_button_active.png);
+}*/
+
+p#welcome-text > a {
+  color: #000;
+  text-decoration: none;
+}
+
+p#welcome-text > a:hover {
+  text-decoration: underline;
+}
+
+h2.headline {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img#9S-comparation {
+  width: 100%;
+}
+
+img.intro-pic {
+  width: 648px;
+  border-style: solid;
+  border-width: 6px;
+  border-color: black;
+}
+
+h2#intro-models > span {
+  font-size: 10px;
+  line-height: 100%;
+}
+
+/*进化*/
+
+div#evolution-container {
+  width: 100%;
+  height: 42px;
+}
+
+div.evolution-step {
+  float: left;
+  width: 33.3%;
+  height: 42px;
+}
+
+div.icon {
+  width: 42px;
+  height: 42px;
+  background-size: contain;
+  float: left;
+}
+
+div.evolution-step > p {
+  float: left;
+  margin-left: 8px;
+  margin-top: 0px;
+  line-height: 133%;
+}
+
+div#step1 > div.icon {
+  background-image: url(img/icon-3x3.png);
+}
+
+div#step2 > div.icon {
+  background-image: url(img/icon-9S-old.png);
+}
+
+div#step2 > p {
+  font-size: 11px;
+}
+
+div#step3 > div.icon {
+  background-image: url(img/icon-9S-now.png);
+}
+
+div#step3 > p {
+  font-size: 11px;
+}
+
+/*下载*/
+
+div#download-container {
+  height: 216px;
+  width: 648px;
+  border-width: 6px;
+  border-color: black;
+  border-style: solid;
+  background-image: url(img/gold_block.png);
+  background-size: 108px;
+  image-rendering: pixelated;
+  cursor: pointer;
+}
+
+div#download-container > h2 {
+  display: block;
+  text-align: center;
+  margin: 96px auto;
+}
+
+div#download-container:hover > h2 {
+  text-decoration: underline;
+}
+
+div#pmc-link {
+  width: 648px;
+  height: 108px;
+  border-width: 6px;
+  border-style: solid;
+  background-image: url(img/dirt.png);
+  background-size: 108px;
+  background-repeat: repeat;
+  text-align: center;
+}
+
+div#pmc-link > h2 {
+  font-weight: bold;
+  margin-top: 42px;
+}
+
+div#pmc-link > h2 > a {
+  color: white;
+  text-decoration: none;
+}
+
+div#pmc-link > h2 > a:hover {
+  text-decoration: underline;
+}
+
+/*右下“反馈建议”按钮
+
+div#fixed-button-container {
+  position: fixed;
+  height: 56px;
+  width: 48.5px;
+  right: 32px;
+  bottom: 32px;
+}
+
+div#fixed-button-hex {
+  float: right;
+  background-color: grey;
+  width: 48.5px;
+  height: 28px;
+  margin-top: 14px;
+  -webkit-transform: rotate(-120deg);
+}
+
+div#fixed-button-hex> div {
+  background-color: grey;
+  width: 48.5px;
+  height: 28px;
+  -webkit-transform: rotate(60deg);
+}
+
+div#fixed-button-hex> div> div {
+  background-color: grey;
+  width: 48.5px;
+  height: 28px;
+  -webkit-transform: rotate(60deg);
+}
+
+p#fixed-button-title {
+  line-height: 115%;
+  margin: 0px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+}
+
+mcbbs按钮
+
+div#feedback-01 {
+  position: fixed;
+  height: 40px;
+  width: 500px;
+  right: 36.25px;
+  bottom: 108px;
+}
+
+div.feedback-mcbbs-icon {
+  float: right;
+  height: 0px;
+  width: 0px;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-image: url(img/feedback_mcbbs.png);
+  background-size: 0px 0px;
+	transition: all 0.1s ease-out;
+}
+
+div.feedback-mcbbs-title {
+  float: right;
+  background-color: #cfcfcf;
+  height: 0px;
+  width: 0px;
+  margin-top: 20px;
+  margin-right: 5px;
+  text-align: center;
+	transition: all 0.1s ease-out;
+}
+
+div.feedback-mcbbs-title> p {
+  font-size: 0px;
+  line-height: 0px;
+  margin-top: 0px;
+	transition: all 0.1s ease-out;
+}
+
+div#feedback-02 {
+  position: fixed;
+  height: 40px;
+  width: 500px;
+  right: 36.25px;
+  bottom: 168px;
+}
+
+div#feedback-netease-icon {
+  background-image: url(img/feedback_netease.png);
+}
+*/
+
+/*///////////////////垫底///////////////////*/
+
+hr#info-hr {
+	height: 0px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	border-color: #c6c8cc;
+}
+
+div#info {
+	margin-top: 0px;
+	width: 100%;
+	height: 343px;
+  color: #adafb3;
+  margin-bottom: 0px;
+}
+
+div#info-logo-container {
+  padding-top: 50px;
+  height: 110px;
+  width: 218px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a#logo-rainbowpixel {
+  float: left;
+  height: 110px;
+  width: 128px;
+  background-image: url(img/rainbowpixel-logo-singlecolor.png);
+  background-size: contain;
+  cursor: pointer;
+}
+
+div#logo-outline {
+  float: left;
+  margin-top: 10px;
+	height: 90px;
+	width: 90px;
+	background-image: url(../../../logo/logo_outline.png);
+	background-size: contain;
+}
+
+div#info-body {
+  margin-left: auto;
+  margin-right: auto;
+  height: 64px;
+  width: min-content;
+}
+
+p#copyright {
+	font-size: 1.5em;
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+
+p#copyright > a {
+  color: #adafb3;
+  text-decoration: none;
+}
+
+p#copyright > a:hover {
+  text-decoration: underline;
+}
+
+p#copyright > span {
+	font-family: Nexa;
+}
+
+div#contact-list {
+	height: 32px;
+	margin-top: 8px;
+}
+
+a.contact-list-body {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin-left: 8px;
+	background-color: #dcdcdc;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 24px;
+	border-radius: 16px;
+	transition: 0.2s cubic-bezier(.4,0,.2,1);
+}
+
+a#email {
+	margin-left: 0px;
+	background-image: url(../../../assets/svg/email-outline.svg);}
+a#GitHub {background-image: url(../../../assets/svg/github-circle.svg);}
+a#SinaWeibo {background-image: url(../../../assets/svg/sina-weibo.svg);}
+a#bilibili {background-image: url(../../../assets/svg/bilibili.png);}
+a#YouTube {background-image: url(../../../assets/svg/youtube.svg);}
+a#Instagram {background-image: url(../../../assets/svg/instagram.svg);}
+
+a#email:hover {background-color: #d93025; background-image: url(../../../assets/svg/email-outline-white.svg);}
+a#GitHub:hover {background-color: #24292e; background-image: url(../../../assets/svg/github-circle-white.svg);}
+a#SinaWeibo:hover {background-color: #fa7d3c; background-image: url(../../../assets/svg/sina-weibo-white.svg);}
+a#bilibili:hover {background-color: #fb7299; background-image: url(../../../assets/svg/bilibili-white.png);}
+a#YouTube:hover {background-color: #ff0000; background-image: url(../../../assets/svg/youtube-white.svg);}
+a#Instagram:hover {background-color: #ae39ae; background-image: url(../../../assets/svg/instagram-white.svg);}

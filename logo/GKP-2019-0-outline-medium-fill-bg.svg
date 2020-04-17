@@ -1,0 +1,21 @@
+<svg id="Long-Lines" xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Background" class="cls-1" cx="500" cy="500" r="475"/>
+  <path id="Circle" class="cls-2" d="M500,0c276.142,0,500,223.858,500,500s-223.858,500-500,500S0,776.142,0,500,223.858,0,500,0Zm0,50c248.528,0,450,201.472,450,450S748.528,950,500,950,50,748.528,50,500,251.472,50,500,50Z"/>
+  <path id="Square" class="cls-2" d="M150,150H850V850H150V150Zm50,50H800V800H200V200Z"/>
+  <path id="Line1" class="cls-2" d="M813.82,152.639l22.36,44.722-500,250-22.36-44.722Z"/>
+  <path id="Line2" class="cls-2" d="M153.014,186.355l44.738-22.348,250.09,499.721L403.1,686.077Z"/>
+  <path id="Line3" class="cls-2" d="M186.18,847.361l-22.36-44.722,500-250,22.36,44.722Z"/>
+  <path id="Line4" class="cls-2" d="M847.986,813.645l-44.738,22.348L553.158,336.272,597.9,313.923Z"/>
+  <path id="Short-Line" class="cls-2" d="M531.418,326.038l47.453,15.755L468.582,673.962l-47.453-15.755Z"/>
+</svg>

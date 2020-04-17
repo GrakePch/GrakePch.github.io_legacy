@@ -1,0 +1,50 @@
+div.title-logo {
+    background-image: url(img/bpdlc-logo-white.png);
+}
+
+div#title_block.light-mode { 
+    background-color: #000;
+}
+
+div#title_block.dark-mode { 
+    background-color: #404040;
+}
+
+/*PBR*/
+
+div#ci_pbr > div.itemLogo {
+    background-image: url(img/pbr-icon.png);
+}
+
+div#ci_pbr > div.static-cover {
+    background-image: url(img/pbr-alphaV1.png);
+}
+
+/*CTM*/
+
+div#ci_ctm > div.itemLogo {
+    background-image: url(img/ctmglass-icon-alt.png);
+}
+
+div#ci_ctm0_0 {
+    background-image: url(img/ctmNature1.png);
+}
+
+div#ci_ctm0_1 {
+    background-image: url(img/ctmGlass.png);
+}
+
+div#ci_ctm0_2 {
+    background-image: url(img/ctmNature2.png);
+}
+
+/*JEI*/
+
+div#ci_jei > div.itemLogo {
+    background-image: url(img/modjei-icon.png);
+}
+
+div#ci_jei > div.static-cover {
+    background-image: url(img/modjei.png);
+}
+

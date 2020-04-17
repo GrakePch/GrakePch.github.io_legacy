@@ -1,0 +1,5 @@
+/*圆形化*/
+
+div#whitelogo > img {
+    border-radius: 50%;
+}

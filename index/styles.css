@@ -1,0 +1,1114 @@
+/*
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('Nexa_Free_Bold-webfont.eot');
+    src: url('Nexa_Free_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Nexa_Free_Bold-webfont.woff2') format('woff2'),
+         url('Nexa_Free_Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: bold;
+}
+*/
+
+@font-face
+{
+font-family: Nexa;
+src: url(../assets/font/Nexa_Free_Bold-webfont.ttf)
+}
+
+body {
+	font-family: Microsoft YaHei, PingFangSC-Regular;
+	margin: 0px;
+	line-height: 150%;
+}
+
+p {
+	word-wrap: break-word;
+}
+
+/*///////////////////顶部导航///////////////////*/
+
+div#nav {
+	z-index: 99;
+}
+
+div#nav-fixed-box {
+	position: fixed;
+	height: 64px;
+	width: 100%;
+	top: 0px;
+	z-index: 99;
+}
+
+div#nav-body {
+	width: 100%;
+	top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img#nav-logo-words {
+	height: 40px;
+	float: left;
+	margin-top: 12px;
+	display: none;
+}
+
+img#nav-logo {
+	height: 48px;
+	float: left;
+	margin-top: 16px;
+	margin-left: 16px;
+	border-radius: 50%;
+	display: none;
+}
+
+/*///////////////////欢迎屏幕///////////////////*/
+
+div#welcome-screen {
+	margin: 0px;
+	width: 100%;
+	height: 320px;
+}
+
+h1#GKP-title {
+	padding-top: 30px;
+	margin: 0px;
+	font-size: 2em;
+	font-family: Nexa;
+}
+
+img#logo-center {
+	position: absolute;
+	top: 117px;
+	left: 50%;
+	width: 150px;
+	margin-left: -75px;
+	/*border-radius: 50%;
+	box-shadow: 8px 8px 0px 0px rgba(168, 197, 236, 0.8);
+	transition: 0.2s;*/
+}
+
+img#logo-center:hover {
+	/*box-shadow: 0px 0px 0px 0px rgba(168, 197, 236, 0.8);*/
+}
+
+@media (min-width: 820px){
+	h1#GKP-title {
+		padding-left: 84px;
+	}
+}
+
+@media (max-width: 819px){
+	h1#GKP-title {
+		padding-left: 28px;
+	}
+}
+
+
+div#welcome-screen-box {
+	position: absolute;
+	width: 660px;
+	height: 248px;
+	top: 50%;
+	margin-top: -124px;
+	left: 50%;
+	margin-left: -330px;
+}
+
+div#representative {
+	display: none;
+	height: 176px;
+	width: 100%;
+	border-radius: 24px;
+}
+
+div#representative > div#r-title {
+	height: 48px;
+	width: auto;
+}
+
+div#r-title > p {
+	position: absolute;
+	margin: 0px;
+	margin-left: 12px;
+	margin-top: 56px;
+	font-size: 14px;
+	color: white;
+}
+
+div#center-banner {
+	height: 128px;
+	width: 100%;
+	background-image: url(../assets/img/welcome-MC9S.png);
+	background-color: #cfcfcf;
+	border-radius: 24px;
+}
+
+/*Navigation System*/
+
+div#nav-FAB {
+	position: fixed;
+	z-index: 99;
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	left: 12px;
+	top: 12px;
+	background-color: rgb(32,33,36);
+	background-image: url(../logo/GKP-1907-outline-w-502x502.png);
+	background-size: 42px;
+	background-position: center;
+	background-repeat: no-repeat;
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+	cursor: pointer;
+}
+
+div#bottom-nav-background {
+	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	height: 64px;
+	bottom: 0px;
+	box-shadow: 0px 2px 10px rgba(0,0,0,.2);
+	z-index: 49;
+}
+
+div#category {
+	position: fixed;
+	bottom: 4px;
+	z-index: 50;
+}
+
+@media (min-width: 820px){
+	div#bottom-nav-background {
+		display: none;
+	}
+
+	div#category {
+		height: 224px;
+		left: 8px;
+		width: 56px;
+		margin-left: 0px;
+	}
+
+	div#nav-body {
+		display: block;
+	}
+
+	div#bottom-FAB {
+		display: none;
+	}
+
+	div#gd {
+		margin-left: 4px;
+	}
+}
+
+@media (max-width: 819px){
+	div#bottom-nav-background {
+		display: inline;
+	}
+
+	div#category {
+		height: 56px;
+		width: 296px;
+		left: 50%;
+		margin-left: -148px;
+	}
+
+	div#nav-body {
+		display: none;
+	}
+
+	div#bottom-FAB {
+		display: block;
+	}
+
+	div#gd {
+		margin-left: 76px;
+	}	
+}
+
+div#bottom-FAB {
+	position: fixed;
+	z-index: 99;
+	width: 64px;
+	height: 64px;
+	left: 50%;
+	margin-left: -32px;
+	bottom: 32px;
+	border-radius: 50%;
+	background-color: rgb(32,33,36);
+	background-image: url(../logo/GKP-1907-outline-w-502x502.png);
+	background-size: 42px;
+	background-position: center;
+	background-repeat: no-repeat;
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+div.cg {
+	float: left;
+	height: 48px;
+	width: 48px;
+	margin: 4px 4px 0 4px;
+	border-radius: 24px;
+	cursor: pointer;
+	transition: background-color 0.2s cubic-bezier(.4,0,.2,1)
+}
+div.cg:hover {background-color: rgba(158,158,158,.2);}
+div.cg:active {background-color: rgba(158,158,158,.4);}
+
+div.cg > img {
+	float: left;
+	height: 24px;
+	margin-top: 12px;
+	margin-left: 12px;
+}
+
+div.cg > p {
+	display: none;
+	float: left;
+	font-size: 14px;
+	margin: 0px;
+	margin-top: 12px;
+	margin-left: 8px;
+}
+
+div#representative-box {
+	float: none;
+	position: absolute;
+	height: 22px;
+	width: 94px;
+	bottom: 16px;
+	right: 16px;
+	padding: 12px 14px 12px 16px;
+	border-radius: 24px;
+	border-width: 1px;
+	border-color: rgba(236,236,236,1);
+	border-style: solid;
+}
+
+@media (min-width: 820px){
+	div#representative-box {
+		display: inline;
+	}
+}
+
+@media (max-width: 819px){
+	div#representative-box {
+		display: none;
+	}
+}
+
+div#r-9S-logo {
+	float: left;
+	width: 22px;
+	height: 22px;
+	background-image: url(../en/minecraft/9-squares/img/9S_icon_dark.png);
+	background-size: contain;
+}
+
+div#r-9S-title {
+	float: left;
+	margin-left: 4px;
+	height: 22px;
+	width: 68px;
+	background-image: url(../en/minecraft/9-squares/img/9S_title_272x88.png);
+	background-size: contain;
+}
+
+/*///////////////////作品分类///////////////////*/
+
+div#creations-classify {
+	width: 660px;
+	height: 128px;
+	margin-top: 0px;
+}
+
+div.cc {
+	float: left;
+	height: 128px;
+	width: 128px;
+	margin-top: 0px;
+	cursor:pointer;
+	box-shadow: 0 4px 20px 0 rgba(0,0,0,0.1);
+	transition: all 0.2s ;
+	-moz-transition: all 0.2s ;
+	-webkit-transition: all 0.2s ;
+	-o-transition:all 0.2s ;
+}
+
+div.cc:hover {
+	background-color: rgba(158,158,158,.15);
+	box-shadow: 0 2px 16px 0 rgba(0,0,0,0);
+}
+div.cc:hover > .clpic {
+	opacity: 0.8;
+}
+div.cc:active {background-color: rgba(158,158,158,.2);}
+
+div.cc-una {
+	box-shadow: 0 3px 8px 0 rgba(0,0,0,0), 0 0 0 1px rgba(0,0,0,0.2);
+}
+
+div#cc-minecraft {
+	margin-left: 0px;
+	background-image: url(../assets/img/cc_minecraft_384.png);
+	background-attachment: scroll;
+	background-size: 128px 128px;
+}
+
+div#cc-gallery {
+	margin-left: 49px;
+	background-color: #cfcfcf;
+}
+
+div#cc-handmade {
+	margin-left: 50px;
+	background-color: #cfcfcf;
+}
+
+div#cc-more {
+	margin-left: 49px;
+	background-color: #cfcfcf;
+}
+
+
+/*///////////////////正文部分///////////////////*/
+
+div#body {
+	width: 684px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#title {
+	line-height: 50px;
+	height: 50px;
+	width: 128px;
+	color: white;
+	background-color: #3d3d3d;
+	text-align: center;
+}
+
+p#title {
+	font-size: 20px;
+}
+
+div.title {
+	margin-left: 12px;
+	height: 48px;
+	width: 200px;
+	border-radius: 24px;
+}
+
+div.title > img {
+	display: none;
+	float: left;
+	height: 24px;
+	margin-top: 12px;
+	margin-left: 12px;
+}
+	
+div.title > p {
+	float: left;
+	font-size: 24px;
+	margin: 0px;
+	margin-top: 24px;
+	margin-left: 0px;
+	color: black;
+	font-weight: bold;
+}
+
+/*作品列表*/
+
+div.creations-list {
+	margin-top: 12px;
+}
+
+@media (min-width: 820px){
+	div#body {width: 684px;}
+	div.creations-list {width: 684px;}
+	div.categorys-container {
+		width: 684px;
+		margin: 0px;
+	}
+}
+@media (max-width: 819px){
+	div#body {width: 100%;}
+	div.creations-list {width: 342px;}
+	div.categorys-container {
+		width: 342px;
+		margin: 0px auto;
+	}
+}
+
+div.creations-list-body {
+	float: left;	
+	height: 308px;
+	width: 318px;
+	margin: 12px;
+}
+
+div.clpic {
+	position: relative;
+	height: 178.875px;
+	width: 100%;
+	border-radius: 0px 0px 0px 0px;
+	background-size: cover;
+	background-color: #7e8085;
+	opacity: 1.0;
+	transition: all 0.2s ;
+	-moz-transition: all 0.2s ;
+	-webkit-transition: all 0.2s ;
+	-o-transition:all 0.2s ;
+}
+
+div.clico {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background-size: contain;
+	right: 12px;
+	bottom: -117.12px;
+	opacity: 0.3;
+	transition: all 0.2s ;
+	-moz-transition: all 0.2s ;
+	-webkit-transition: all 0.2s ;
+	-o-transition:all 0.2s ;
+}
+
+div.cc:hover > .clpic > .clico {	
+	opacity: 1;
+}
+
+div.open-in-new {
+	background-image: url(../assets/svg/open-in-new.svg);
+}
+
+div.arrow-right {
+	background-image: url(../assets/svg/arrow-right.svg);
+}
+
+div.clbody {
+	float: left;
+	margin-top: 8px;
+	margin-left: 12px;
+}
+
+p.clsubtit {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #adafb3;
+}
+
+p.cltitle {
+	margin-top: 8px;
+	margin-bottom: 0px;
+	width: 294px;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+p.clintro {
+	margin-top: 8px;
+	margin-bottom: 0px;
+	width: 294px;
+	color: black;
+	font-size: 14px;
+	line-height: 150%;
+	word-break: normal;
+}
+
+/*///////////////////Minecraft///////////////////*/
+
+div#anchor-mc {
+	height: 16px;
+	width: 100%;
+}
+
+div#minecraft {
+	display: block;
+}
+
+div#mc-creations-list {
+	display: block;
+}
+
+.clear{clear:both;}
+
+div#clb-vid > .clpic {
+	background-image: url(../assets/img/creations_list_square_mc_vid2_cover.png);
+}
+
+div#clb1 > .clpic {
+	background-image: url(../assets/img/creations_list_square_mc_9s_16-9.png);	
+	background-color: white;
+}
+
+div.clbody > #clb1-9s-tit {
+	background-image: url(../assets/img/creations_list_square_mc_9s_tit.png);
+	background-size: 170px;
+	margin-top: 4px;
+	height: 55px;
+	width: 170px;
+}
+
+div#clb-bpdlc > .clpic {
+	background-image: url(http://www.grakepch.com/zh/minecraft/bpdlc/img/modbop.png);
+}
+
+div#clb2 > .clpic {
+	background-image: url(http://wx2.sinaimg.cn/large/c5fd7864gy1fbxkzcqu83j21hc0s9h23.jpg)
+}
+
+div#clb3 > .clpic {
+	background-image: url(../assets/img/creations_list_square_mc_tan_384_alt.png);
+	background-position: center;
+}
+
+div#clb4 > .clpic {
+	background-image: url(../assets/img/MC_FDB.png);
+}
+
+/*///////////////////魔方手工改造///////////////////*/
+
+div#anchor-tp {
+	margin-top: 84px;
+	height: 16px;
+	width: 100%;
+}
+
+div#cltp1 > .clpic {
+	background-image: url(../assets/img/creations_list_square_tp_P331_384_alt_16-9.png);
+	background-color: white;
+}
+
+div#cltp2 > .clpic {
+	background-image: url(../assets/img/creations_list_square_tp_4ba_384_alt_16-9.png);
+	background-color: white;
+}
+
+div#cltp3 > .clpic {
+	background-image: url(../assets/img/creations_list_square_tp_3ba_384_alt2_16-9.png);
+	background-color: white;
+}
+
+/*///////////////////平面设计作品///////////////////*/
+
+div#anchor-gd {
+	margin-top: 84px;
+	height: 16px;
+	width: 100%;
+}
+
+@media (min-width: 820px){
+	div#clgd1 {
+		width: 658px;
+		height: 126px;
+	}
+	div#gkp-logohislist {
+		width: 608px;
+		margin-left: 25px;
+	}
+	div#y2014-06 {margin-top: 0px;}
+	div#y2015-09 {margin-top: 0px;}
+	div#y2016-04 {margin-top: 0px;}
+	div#y2017-05 {margin-top: 0px;}
+}
+@media (max-width: 819px){
+	div#clgd1 {
+		width: 318px;
+		height: 202px;
+	}
+	div#gkp-logohislist {
+		width: 304px;
+		margin-left: 7px;
+	}
+	div#y2014-06 {margin-top: 38px;}
+	div#y2015-09 {margin-top: 38px;}
+	div#y2016-04 {margin-top: 38px;}
+	div#y2017-05 {margin-top: 38px;}
+}
+
+p#gkp-logohistitle {
+	font-size: 16px;
+	font-weight: bold;
+	height: 20px;
+	margin-top: 10px;
+	margin-bottom: 14px;
+	margin-left: 45px;
+}
+
+div#gkp-logohislist {
+	height: 38px;
+}
+
+div.gkp-logohis {
+	float: left;
+	width: 38px;
+	height: 38px;
+	margin: 0px 19px;
+	background-size: 38px;
+}
+
+div.gkp-logohis > p {
+	font-size: 10px;
+	text-align: center;
+	height: 20px;
+	margin-top: 43px;
+}
+
+div#gkp-logohislist > #yb2011 {
+	background-image: url(../assets/img/gkp-logohis/2011b.png);	
+}
+
+div#gkp-logohislist > div#y2012 {
+	background-image: url(../assets/img/gkp-logohis/2012.png);	
+}
+
+div#gkp-logohislist > div#y2014-01 {
+	background-image: url(../assets/img/gkp-logohis/2014-01.png);	
+}
+
+div#gkp-logohislist > div#y2014-03 {
+	background-image: url(../assets/img/gkp-logohis/2014-03.jpg);	
+}
+
+div#gkp-logohislist > div#y2014-06 {
+	background-image: url(../assets/img/gkp-logohis/2014-06.jpg);	
+}
+
+div#gkp-logohislist > div#y2015-09 {
+	background-image: url(../assets/img/gkp-logohis/2015-09.png);	
+}
+
+div#gkp-logohislist > div#y2016-04 {
+	background-image: url(../assets/img/gkp-logohis/2016-04.png);	
+}
+
+div#gkp-logohislist > div#y2017-05 {
+	background-image: url(../assets/img/gkp-logohis/2017-05.png);	
+}
+
+/*横向展示列表：应用图标*/
+
+div.creations-horizontal-list {
+	float: left;
+	margin: 12px;
+	box-shadow: 0 4px 20px 0 rgba(0,0,0,0.1);
+}
+
+.horizontal-list-quarter {
+	float: left;
+	margin: 0px;
+	cursor: pointer;
+	transition: all 0.2s ;
+	-moz-transition: all 0.2s ;
+	-webkit-transition: all 0.2s ;
+	-o-transition:all 0.2s ;
+}
+
+.horizontal-list-quarter:hover {
+	background-color: #f4f4f4;
+}
+
+.horizontal-list-quarter > div {
+	width: 88px;
+	height: 88px;
+	border-radius: 50%;
+	background-color: #fff;
+	background-size: contain;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+	transition: all 0.2s ;
+	-moz-transition: all 0.2s ;
+	-webkit-transition: all 0.2s ;
+	-o-transition:all 0.2s ;
+}
+
+.horizontal-list-quarter > p {
+	text-align: center;
+	font-weight: bold;
+	transition: all 0.2s ;
+	-moz-transition: all 0.2s ;
+	-webkit-transition: all 0.2s ;
+	-o-transition:all 0.2s ;
+}
+
+.horizontal-list-quarter:hover > p {
+	opacity: 1;
+}
+
+@media (min-width: 820px){
+	div.creations-horizontal-list {
+		width: 658px;
+		height: 308px;
+	}
+	.horizontal-list-quarter {
+		width: 25%;
+		height: 100%;
+	}
+	.horizontal-list-quarter > div {
+		margin: 110px auto 24px auto;
+		float: none;
+	}
+	.horizontal-list-quarter:hover > div {
+		margin: 94px auto 24px auto;
+	}
+	.horizontal-list-quarter > p {
+		opacity: 0;
+		float: none;
+		margin-top: auto;
+	}
+}
+
+@media (max-width: 819px){
+	div.creations-horizontal-list {
+		width: 318px;
+		height: 616px;
+	}
+	.horizontal-list-quarter {
+		width: 100%;
+		height: 25%;
+	}
+	.horizontal-list-quarter > div {
+		margin: 33px 44px 33px 44px;
+		float: left;
+	}
+	.horizontal-list-quarter:hover > div {
+		margin: 33px 44px 33px 44px;
+	}
+	.horizontal-list-quarter > p {
+		opacity: 1;
+		float: left;
+		margin-top: 65px;
+	}
+}
+
+.creations-horizontal-list > #app-eaxt > div {
+	background-image: url(../assets/img/creations_hori_list_Eaxt.png);
+}
+
+.creations-horizontal-list > #app-fragMem > div {
+	background-image: url(../assets/img/creations_hori_list_FragMem.png);
+}
+
+.creations-horizontal-list > #app-bmap > div {
+	background-image: url(../assets/img/creations_hori_list_Bmap.png);
+}
+
+.creations-horizontal-list > #app-mereNews > div {
+	background-image: url(../assets/img/creations_hori_list_MereNews.png);
+}
+
+/**/
+
+#bmap > .clpic {
+	background-image: url(../assets/img/creations_list_square_gd_Bmap.png);
+	background-color: #fff;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#gzt-fd > .clpic {
+	background-image: url(../assets/img/creations_list_square_gd_GZTinFD_450.png);
+	background-color: #252525;
+	background-size: 178.875px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#ocnw > .clpic {
+	background-image: url(../assets/img/creations_list_square_gd_ocnw_512_16-9.png);
+	background-color: #fff;
+	background-position: center;
+	background-repeat: no-repeat;	
+}
+
+div#clgd2 > .clpic {
+	background-image: url(../assets/img/creations_list_square_gd_guzhi_384_16-9.png);
+}
+
+div#clgd3 > .clpic {
+	background-image: url(../assets/img/creations_list_square_gd_WAD_384_16-9.png);
+}
+
+div#clgd3 > .clbody > .cltitle {
+	font-size: 17px;
+}
+
+div#clgd4 > .clpic {
+	background-image: url(../assets/img/creations_list_square_gd_Fm_480.png);
+	background-color: white;
+	background-size: 178.875px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+div#clgd5 > .clpic {
+	background-image: url(../assets/img/creations_list_square_gd_Time_384.png);
+	background-color: white;
+	background-size: 178.875px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*///////////////////原创音乐作品///////////////////*/
+
+div#anchor-mw {
+	margin-top: 84px;
+	height: 16px;
+	width: 100%;
+}
+
+div#clmw1 > .clpic {
+	background-image: url(../assets/img/creations_list_square_mw_WoP_284.png);
+	background-position: center;
+}
+
+div#clmw2 > .clpic {
+	background-image: url(../assets/img/creations_list_square_mw_Pmt_284.png);
+	background-position: center;
+	background-size: 128px;
+}
+
+/*///////////////////人脉///////////////////*/
+
+div#connections {
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#cards-container {
+	margin-top: 12px;
+}
+
+@media (min-width: 820px){
+	div#connections {
+		width: 684px;
+	}
+	div#cards-container {
+		width: 684px;
+	}
+}
+@media (max-width: 819px){
+	div#connections {
+		width: 342px;
+	}
+	div#cards-container {
+		width: 342px;
+	}
+}
+
+/*新排版*/
+
+div.cards {
+	float: left;
+	height: 224px;
+	width: 171px;
+	margin: 0px;
+}
+
+div.cards > div.pic {
+	height: 147px;
+	width: 147px;
+	margin: 12px;
+	border-radius: 50%;
+	background-color: gray;
+	background-size: contain;
+}
+
+div.connection-link {
+	position: relative;
+	padding-top: 112px;
+	width: 100%;
+	height: 40px;
+}
+
+div.connection-link > a {
+	display: block;
+	float: right;
+	margin: 0 0 0 10px;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,.2);
+
+	background-size: 24px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+div.connection-link > a.github {
+	background-image: url(../assets/svg/github-circle.svg);
+}
+
+div.connection-link > a.website {
+	background-image: url(../assets/svg/web.svg);
+}
+
+div.connection-link > a.youtube {
+	background-image: url(../assets/svg/youtube.svg);
+}
+
+div.connection-link > a.insta {
+	background-image: url(../assets/svg/instagram.svg);
+}
+
+div.connection-link > a.twitter {
+	background-image: url(../assets/svg/twitter.svg);
+}
+
+div.cards > div.connection-title {
+	height: 53px;
+	width: auto;
+	text-align: center;
+}
+
+div.cards > div.connection-title > p {
+	margin: 0px;
+	padding-top: 10px;
+}
+
+
+/**/
+
+div#logo-gztime {
+	background-image: url(../assets/img/creations_list_square_gd_GZTinFD_450.png);
+}
+
+div#logo-c6h5no2 {
+	background-image: url(https://www.c6h5no2.com/favicon.ico);
+}
+
+div#logo-hurrypeng {
+	background-image: url(https://avatars0.githubusercontent.com/u/25132396);
+}
+
+div#logo-willwu {
+	background-image: url(../assets/img/creations_list_square_gd_WAD_384.png);
+}
+
+div#logo-jakobz {
+	background-image: url(../assets/img/connections/Jakobz_400x.png);
+}
+
+div#logo-pairman {
+	background-image: url(https://rainbowpixel.net/assets/member/Pairman.png);
+}
+
+div#logo-ethans {
+	background-image: url(../assets/img/connections/ethan-logo-light.png);
+}
+
+/*///////////////////垫底///////////////////*/
+
+hr#info-hr {
+	height: 0px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	border-color: #c6c8cc;
+}
+
+div#info {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 342px;
+	height: 64px;
+	color: #adafb3;
+}
+
+div#logo-outline {
+	float: left;
+	height: 64px;
+	width: 64px;
+	background-image: url(../logo/GKP-1907-outline-g-502x502.png);
+	background-size: contain;
+}
+
+div#info-body {
+	float: left;
+	margin-left: 24px;
+	height: 64px;
+}
+
+p#copyright {
+	font-size: 1.5em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+p#copyright > span {
+	font-family: Nexa;
+}
+
+div#contact-list {
+	height: 32px;
+	margin-top: 8px;
+}
+
+a.contact-list-body {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin-left: 8px;
+	background-color: #dcdcdc;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 24px;
+	border-radius: 16px;
+	transition: 0.2s cubic-bezier(.4,0,.2,1);
+}
+
+a.contact-list-body > div {
+	width: 32px;
+	height: 32px;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 1;
+	background-size: 24px;
+	transition: 0.2s cubic-bezier(.4,0,.2,1);
+}
+
+a.contact-list-body:hover > div {opacity: 0;}
+
+a#email {
+	margin-left: 0px;
+	background-image: url(../assets/svg/email-outline-white.svg);}
+a#email > div {background-image: url(../assets/svg/email-outline.svg);}
+a#GitHub {background-image: url(../assets/svg/github-circle-white.svg);}
+a#GitHub > div {background-image: url(../assets/svg/github-circle.svg);}
+a#SinaWeibo {background-image: url(../assets/svg/sina-weibo-white.svg);}
+a#SinaWeibo > div {background-image: url(../assets/svg/sina-weibo.svg);}
+a#bilibili {background-image: url(../assets/svg/bilibili-white.png);}
+a#bilibili > div {background-image: url(../assets/svg/bilibili.png);}
+/*a#YouTube {background-image: url(../assets/svg/youtube.svg);}
+a#Instagram {background-image: url(../assets/svg/instagram.svg);}*/
+a#Coolapk {background-image: url(../assets/svg/ic_coolapk_logo_white_sharp.svg);}
+a#Coolapk > div {background-image: url(../assets/svg/ic_coolapk_logo_black_sharp.svg);}
+a#Twitter {background-image: url(../assets/svg/twitter-white.svg);}
+a#Twitter > div {background-image: url(../assets/svg/twitter.svg);}
+
+a#email:hover {background-color: #d93025;}
+a#GitHub:hover {background-color: #24292e;}
+a#SinaWeibo:hover {background-color: #fa7d3c;}
+a#bilibili:hover {background-color: #fb7299;}
+/*a#YouTube:hover {background-color: #ff0000; background-image: url(../assets/svg/youtube-white.svg);}
+a#Instagram:hover {background-color: #ae39ae; background-image: url(../assets/svg/instagram-white.svg);}*/
+a#Coolapk:hover {background-color: #11b767;}
+a#Twitter:hover {background-color: #1da1f2;}
+
+div#bottom {
+	margin-top: 100px;
+	width: 660px;
+}

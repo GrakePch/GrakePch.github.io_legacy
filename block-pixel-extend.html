@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>方块概念扩展</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="globalStyles/listType.css" type="text/css" rel="stylesheet" />
+	<link href="subpageAssets/bpextend/styles.css" type="text/css" rel="stylesheet" />
+	<script src="globalJs/threeInOneMotionPic.js"></script>
+	<script src="globalJs/darkModeForListTypePages.js"></script>
+	<script src="globalJs/drawerForListTypePages.js"></script>
+</head>
+
+<body>
+
+	<div id="float-drawer-button" onclick="drawerSwitcher();FDBicoIsHovered()" onmouseover="FDBicoIsHovered()" onmouseleave="FDBicoIsNotHovered()"><div id="FDB-bg" class="ico-gp"></div></div>
+
+	<div id="minimal-drawer-list" class="light-dark-theme light-mode">	
+		<a class="min-items" id="min-drawer-home" href="index.html" onmouseover="listBgIsHovered('drawer-home')" onmouseleave="listBgIsNotHovered('drawer-home')"><div></div></a>
+		<a class="min-items" id="min-drawer-all-creations" href="projects.html" onmouseover="listBgIsHovered('drawer-all-creations')" onmouseleave="listBgIsNotHovered('drawer-all-creations')"><div></div></a>
+		<a class="min-items hidden" id="min-drawer-friends"><div></div></a>
+		<div class="clear"></div>
+	</div>
+
+	<div id="mobile-bottom-nav" class="light-dark-theme light-mode">
+		<div id="m-nav-drawer-box" class="drawer-off light-dark-theme light-mode">
+			<div id="m-list-in-drawer">
+				<a class="items" id="m-drawer-home" href="index.html"><div class="mDLi-ico"></div><div>首页</div></a>
+				<a class="items" id="m-drawer-all-creations" href="projects.html"><div class="mDLi-ico"></div><div>全部作品</div></a>
+				<a class="items hidden" id="m-drawer-friends"></a>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<a id="m-nav-drawer-button" onclick="drawerSwitcherMobile();"><div id="mNDB-bg" class="ico-gp"></div></a>
+		<a id="m-nav-title">方块概念扩展</a>
+		<a id="m-nav-dark-mode-switcher" onclick="darkModeSwitcher()"></a>
+	</div>
+
+	<div id="drawer-box" class="drawer-off light-dark-theme light-mode">
+		<div id="list-in-drawer">
+			<a class="items" id="drawer-home" href="index.html">首页</a>
+			<a class="items" id="drawer-all-creations" href="projects.html">全部作品</a>
+			<a class="items hidden" id="drawer-friends"></a>
+			<div class="clear"></div>
+		</div>
+		<div id="function-buttons-box">
+			<div>
+				<div class="funct-b-item" id="dark-mode-switcher" onclick="darkModeSwitcher()"><div></div></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="whole-page-overlay" class="" onclick="drawerSwitcher();"></div>
+	<div id="m-whole-page-overlay" class="" onclick="drawerSwitcherMobile();"></div>
+
+	<div id="main-body">
+		<div id="title_block" class="light-dark-theme light-mode">
+			<div class="title-content">
+				<div class="title-logo"></div>
+				<a class="title-text">方块概念扩展</a>
+			</div>
+			<div class="nav-in-title">
+				<a id="navPackList" onclick="var element = document.getElementById('creationList');
+				element.scrollIntoView({behavior: 'smooth', block: 'start'});">材质列表</a>
+				<a id="navAbout" onclick="var element = document.getElementById('about');
+				element.scrollIntoView({behavior: 'smooth', block: 'start'});">关于</a>
+			</div>
+		</div>
+
+		<div id="fixedBottomRightButtons">
+			<!-- <div class="fab-button light-dark-theme light-mode" id="DarkModeSwitcher" onclick="darkModeSwitcher()"></div> -->
+		</div>
+
+		<div id="creationList">
+
+			<div class="creationItem" id="ci_pbr">
+				<div class="static-cover"></div>
+				<div class="itemLogo"></div>
+				<div class="itemTxtContainer">
+					<h1>方块概念：PBR补充包Alpha</h1>
+					<p>
+						Alpha版本V1。初步适配了主要方块的PBR效果，主要包括：<br/>
+						 - 闪亮亮的铁块、金块、钻石块、绿宝石块。<br/>
+						 - 含有铁质部分的大部分方块，如铁门、铁轨等。<br/>
+						 - 箱子、矿车。<br/>
+						最佳适配版本：Java 1.14.x<br/>
+						需要安装符合版本的最新OptifineHD。<br/>
+						加载SEUS PTGI E12光影包获得最佳体验。<br/>
+					</p>
+				</div>
+				<div class="clear"></div>
+				<hr class="grey-line"/>
+				<div class="item-links-max-width">
+					<a class="download-button light-dark-theme light-mode" href="subpageAssets/bpextend/downloads/BlockPixel_Extend_pbr_1-14_alpha_v1.zip"><div><div class="ico-in-a dl"></div><div class="txt-in-a">下载 适用于1.14.x</div><div class="clear"></div></div></a>
+				</div>
+			</div>
+			
+			<div class="creationItem" id="ci_ctm">
+				<div class="cover-with-title-motion-box" id="ci_ctm0" onmouseleave="resetPicsStyle('ci_ctm0')">
+					<div id="ci_ctm0_0" class="cover-pic-left" onmouseover="highlightHoverPics('ci_ctm0_0')" onclick="foldSiblingPics('ci_ctm0_0')"></div>
+					<div id="ci_ctm0_1" class="cover-pic-middle" onmouseover="highlightHoverPics('ci_ctm0_1')" onclick="foldSiblingPics('ci_ctm0_1')"></div>
+					<div id="ci_ctm0_2" class="cover-pic-right" onmouseover="highlightHoverPics('ci_ctm0_2')" onclick="foldSiblingPics('ci_ctm0_2')"></div>
+				</div>
+				<div class="itemLogo"></div>
+				<div class="itemTxtContainer">
+					<h1>方块概念：ctm连接纹理补充包</h1>
+					<p>
+						为玻璃和染色玻璃制作了无缝衔接。<br/>
+						为草地、沙子以及沙砾等制作了更加像素化的过渡*。<br/>
+						需要安装符合版本的最新OptifineHD。<br/>
+						* 此特性仅限 Java 1.14 版本及以上。
+					</p>
+				</div>
+				<div class="clear"></div>
+				<hr class="grey-line"/>
+				<div class="item-links-max-width">
+					<a class="download-button light-dark-theme light-mode" href="subpageAssets/bpextend/downloads/BlockPixel_DLC_ctm_1-14_v0-5.zip"><div><div class="ico-in-a dl"></div><div class="txt-in-a">下载 适用于1.14.x</div><div class="clear"></div></div></a>
+					<div class="margin-block"></div>
+					<a class="download-button light-dark-theme light-mode" href="subpageAssets/bpextend/downloads/BlockPixel_DLC_ctm_1-12_v0-2.zip"><div><div class="ico-in-a dl"></div><div class="txt-in-a">下载 适用于1.12.x</div><div class="clear"></div></div></a>
+					<div class="margin-block"></div>
+					<a class="externalLink light-dark-theme light-mode" target="_blank" href="https://www.mcbbs.net/thread-927100-1-1.html"><div><div class="txt-in-a">访问Mcbbs发布帖</div><div class="ico-in-a ext-link"></div><div class="clear"></div></div></a>
+				</div>
+
+			</div>
+
+			<div class="creationItem" id="ci_jei">
+				<div class="static-cover"></div>
+				<div class="itemLogo"></div>
+				<div class="itemTxtContainer">
+					<h1>方块概念：JEI模组包</h1>
+					<p>为JEI适配了方块概念风格的GUI。适配版本：Java 1.12.2</p>
+				</div>
+				<div class="clear"></div>
+				<hr class="grey-line"/>
+				<div class="item-links-max-width">
+					<a class="download-button light-dark-theme light-mode" href="subpageAssets/bpextend/downloads/BlockPixel_DLC_JEI_1-12-2.zip"><div><div class="ico-in-a dl"></div><div class="txt-in-a">下载 适用于1.12.2</div><div class="clear"></div></div></a>
+					<div class="margin-block"></div>
+					<a class="externalLink light-dark-theme light-mode" target="_blank" href="https://www.mcbbs.net/thread-925873-1-1.html"><div><div class="txt-in-a">访问Mcbbs发布帖</div><div class="ico-in-a ext-link"></div><div class="clear"></div></div></a>
+				</div>
+			</div>
+			
+		</div>
+
+		<div id="about">
+			<div id="about-txt-container" class="light-dark-theme light-mode">
+				<h1>关于</h1>
+				<p><span class="p-bold">方块概念扩展</span> 是由彩虹像素团队的GrakePCH发起的方块概念材质的扩展材质项目，经由方块概念材质原作者兼彩虹像素团队负责人Jakob.zero的授权。本系列材质旨在完善方块概念在MC更多角度上的适配，包括Optifine对材质多样化的提升以及模组适配。<br/>方块概念扩展系列作为用户可自行选择添加的附加包，<span class="p-bold">需要搭配方块概念原版材质使用，并在资源包列表排序置于原材质上级。</span></p>
+			</div>
+			<div id="creatorList">
+				<div class="creator-card" id="cCardJakobZ">
+					<div class="creator-pic"></div>
+					<div class="creator-txt-container">
+						<a class="light-dark-theme light-mode">Jakob.zero</a>
+						<p>方块概念材质原作者</p>
+					</div>
+				</div>
+				<div class="creator-card" id="cCardGrakeP">
+					<div class="creator-pic"></div>
+					<div class="creator-txt-container">
+						<a class="light-dark-theme light-mode">GrakePCH</a>
+						<p>方块概念扩展项目发起人</p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+		</div>
+
+
+		<div id="bottom-space"></div>
+
+	</div>
+
+</body>
+
+</html>

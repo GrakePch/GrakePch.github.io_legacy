@@ -1,0 +1,31 @@
+div#icon-O-box {
+    width: 100%;
+}
+
+div#icon-O-box > div {
+    width: 226px;
+    height: 226px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+div#ad-icon-bg {
+    width: 226px;
+    height: 226px;
+    border-radius: 50%;
+    background-image: url(bg_4_400.png);
+    background-size: 339px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+div#ad-icon-fg {
+    width: 226px;
+    height: 226px;
+    border-radius: 50%;
+    background-image: url(fg_2_400.png);
+    background-size: 339px;
+    background-position: center;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,21 @@
+#title_block {
+    background-image: url(../indexpageAssets/img/GKP-2004-Light-opacity0.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#title_block.dark-mode {
+    filter: brightness(0) invert(100%);
+}
+
+@media (min-width: 820px){
+    #title_block {
+        background-size: initial;
+    }
+}
+
+@media (max-width: 819px){
+    #title_block {
+        background-size: contain;
+    }
+}

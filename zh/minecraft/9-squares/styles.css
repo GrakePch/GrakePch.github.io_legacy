@@ -1,0 +1,509 @@
+body {
+  font-family: Microsoft YaHei, PingFangSC-Regular;
+  margin: 0px;
+  line-height: 150%;
+}
+
+@font-face
+{
+font-family: Nexa;
+src: url(../../../assets/font/Nexa_Free_Bold-webfont.ttf)
+}
+
+p {
+	word-wrap: break-word;
+}
+
+/*logo-container*/
+
+div#logo-container {
+  width: 100%;
+  height: 320px;
+  background-image: url(img/9S_icon_dark_op10.png);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+div#logo-title {
+  position: relative;
+  width: 272px;
+  height: 88px;
+  top: 116px;
+  left: 50%;
+  margin-left: -132px;
+  background-image: url(img/9S_title_HD.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*Floating Logo*/
+
+div#floatinglogo {
+  position: fixed;
+  z-index: 99;
+  background-color: rgb(32,33,36);
+  background-image: url(img/9S_icon.png);
+  background-position: center;
+  background-size: 36px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+/*navigation*/
+
+#body {
+  height: auto;
+  margin: 0px auto;
+}
+
+#sub-nav-container {
+  height: 64px;
+  width: 100%;
+  background-color: #fff;
+  left: 0px;
+  bottom: 0px;
+}
+
+#sub-nav {
+  height: 64px;
+  width: 192px;
+}
+
+#sub-nav > a {
+  display: block;
+  position: relative;
+  float: left;
+  margin: 0 8px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transition: background-color 0.2s cubic-bezier(.4,0,.2,1);
+}
+
+#sub-nav > a:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+a#intro-link {
+  width: 80px;
+  background-image: url(img/intro-word-pixel.png);
+  background-size: 46px;
+  image-rendering: pixelated;
+  border-style: solid;
+  border-color: black;
+}
+
+a#download-link {
+  width: 80px;
+  background-image: url(img/download-word-pixel.png);
+  background-size: 44px;
+  image-rendering: pixelated;
+}
+
+@media (min-width: 820px){
+  div#floatinglogo {
+      left: 12px;
+      top: 12px;
+      width: 56px;
+      height: 56px;
+  }
+  #body {
+      width: 684px;
+  }
+  #sub-nav-container {
+      position: static;
+      margin: 0 0 100px 0;
+      box-shadow: 0px 2px 10px rgba(0,0,0,0);
+  }
+  #sub-nav {
+      margin: 0px auto;
+  }
+  #sub-nav > a {
+      top: 8px;
+      height: 48px;
+  }
+  a#intro-link {
+      height: 48px;
+      border-width: 0 0 3px 0;
+  }
+}
+
+@media (max-width: 819px){
+  div#floatinglogo {
+      left: 32px;
+      bottom: 32px;
+      width: 64px;
+      height: 64px;
+  }
+  #body {
+      width: 342px;
+  }
+  #sub-nav-container {
+      position: fixed;
+      margin: 0 0 0 0;
+      box-shadow: 0px 2px 10px rgba(0,0,0,.2);
+  }
+  #sub-nav {
+      margin: 0 0 0 104px;
+  }
+  #sub-nav > a {
+      top: 0px;
+      height: 64px;      
+  }
+  a#intro-link {
+      height: 58px;
+      border-width: 3px 0 0 0;
+  }
+}
+
+h2.headline {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img#_9S-comparation {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width: 820px){
+  h2#intro > #space {display: inline}
+  h2#intro > #br {display: none}
+}
+@media (max-width: 819px){
+  h2#intro > #space {display: none}
+  h2#intro > #br {display: inline}
+}
+
+img.intro-pic {
+  width: 96.5%;
+  border-style: solid;
+  border-width: 6px;
+  border-color: black;
+  margin: 0 auto;
+  display: block;
+}
+
+h2#intro-models > span {
+  font-size: 10px;
+  line-height: 100%;
+}
+
+/*进化*/
+
+div#evolution-container {
+  width: 100%;
+  height: 42px;
+}
+
+div.evolution-step {
+  float: left;
+  width: 228px;
+  height: 42px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 820px){
+  div.evolution-step {width: 228px;}
+}
+@media (max-width: 819px){
+  div.evolution-step {width: 100%;}
+}
+
+div.icon {
+  width: 42px;
+  height: 42px;
+  background-size: contain;
+  float: left;
+}
+
+div.evolution-step > p {
+  float: left;
+  margin-left: 8px;
+  margin-top: 0px;
+  line-height: 133%;
+}
+
+div#step1 > div.icon {
+  background-image: url(img/icon-3x3.png);
+}
+
+div#step2 > div.icon {
+  background-image: url(img/icon-9S-old.png);
+}
+
+div#step3 > div.icon {
+  background-image: url(img/icon-9S-now.png);
+}
+
+/*下载*/
+
+a#download-container {
+  display: block;
+  cursor: pointer;
+  border: 6px solid #000;
+  margin: 0 auto;
+  background-image: url(img/gold_block.png);
+  background-size: 110px;
+  image-rendering: pixelated;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+
+a#download-container:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 820px){
+  a#download-container {
+    height: 24px;
+    width: 660px;
+    padding: 98px 0;
+  }
+  a#download-container > br {
+    display: none;
+  }
+}
+
+@media (max-width: 819px){
+  a#download-container {
+    height: 48px;
+    width: 330px;
+    padding: 86px 0;
+  }
+  a#download-container > br {
+    display: inline;
+  }
+}
+
+.link-box {
+  display: block;
+  cursor: pointer;
+  border: 6px solid #000;
+  margin: 0 auto;
+  background-size: 110px;
+  background-repeat: repeat;
+  image-rendering: pixelated;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.link-box:hover {
+  text-decoration: underline;
+}
+
+#pmc-link {
+  margin-top: 24px;
+  background-image: url(img/dirt.png);
+}
+
+#mcbbs-link {
+  background-image: url(img/chest.png);
+}
+
+@media (min-width: 820px){
+  .link-box {
+    height: 24px;
+    width: 660px;
+    padding: 43px 0;
+  }
+  .link-box > br {
+    display: none;
+  }
+}
+
+@media (max-width: 819px){
+  .link-box {
+    height: 48px;
+    width: 330px;
+    padding: 31px 0;
+  }
+  .link-box > br {
+    display: inline;
+  }
+}
+
+/*右下“反馈建议”按钮
+
+div#fixed-button-container {
+  position: fixed;
+  height: 56px;
+  width: 48.5px;
+  right: 32px;
+  bottom: 32px;
+}
+
+div#fixed-button-hex {
+  float: right;
+  background-color: grey;
+  width: 48.5px;
+  height: 28px;
+  margin-top: 14px;
+  -webkit-transform: rotate(-120deg);
+}
+
+div#fixed-button-hex> div {
+  background-color: grey;
+  width: 48.5px;
+  height: 28px;
+  -webkit-transform: rotate(60deg);
+}
+
+div#fixed-button-hex> div> div {
+  background-color: grey;
+  width: 48.5px;
+  height: 28px;
+  -webkit-transform: rotate(60deg);
+}
+
+p#fixed-button-title {
+  line-height: 115%;
+  margin: 0px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+}
+
+mcbbs按钮
+
+div#feedback-01 {
+  position: fixed;
+  height: 40px;
+  width: 500px;
+  right: 36.25px;
+  bottom: 108px;
+}
+
+div.feedback-mcbbs-icon {
+  float: right;
+  height: 0px;
+  width: 0px;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-image: url(img/feedback_mcbbs.png);
+  background-size: 0px 0px;
+	transition: all 0.1s ease-out;
+}
+
+div.feedback-mcbbs-title {
+  float: right;
+  background-color: #cfcfcf;
+  height: 0px;
+  width: 0px;
+  margin-top: 20px;
+  margin-right: 5px;
+  text-align: center;
+	transition: all 0.1s ease-out;
+}
+
+div.feedback-mcbbs-title> p {
+  font-size: 0px;
+  line-height: 0px;
+  margin-top: 0px;
+	transition: all 0.1s ease-out;
+}
+
+div#feedback-02 {
+  position: fixed;
+  height: 40px;
+  width: 500px;
+  right: 36.25px;
+  bottom: 168px;
+}
+
+div#feedback-netease-icon {
+  background-image: url(img/feedback_netease.png);
+}
+*/
+
+/*///////////////////垫底///////////////////*/
+
+hr#info-hr {
+	height: 0px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	border-color: #c6c8cc;
+}
+
+div#info {
+	margin-top: 50px;
+	width: 342px;
+	height: 64px;
+  color: #adafb3;
+  margin-bottom: 100px;
+}
+
+div#logo-outline {
+	float: left;
+	height: 64px;
+	width: 64px;
+	background-image: url(../../../logo/logo_outline.png);
+	background-size: contain;
+}
+
+div#info-body {
+	float: left;
+	margin-left: 24px;
+	height: 64px;
+}
+
+p#copyright {
+	font-size: 1.5em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+p#copyright > span {
+	font-family: Nexa;
+}
+
+div#contact-list {
+	height: 32px;
+	margin-top: 8px;
+}
+
+a.contact-list-body {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin-left: 8px;
+	background-color: #dcdcdc;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 24px;
+	border-radius: 16px;
+	transition: 0.2s cubic-bezier(.4,0,.2,1);
+}
+
+a#email {
+	margin-left: 0px;
+	background-image: url(../../../assets/svg/email-outline.svg);}
+a#GitHub {background-image: url(../../../assets/svg/github-circle.svg);}
+a#SinaWeibo {background-image: url(../../../assets/svg/sina-weibo.svg);}
+a#bilibili {background-image: url(../../../assets/svg/bilibili.png);}
+a#YouTube {background-image: url(../../../assets/svg/youtube.svg);}
+a#Instagram {background-image: url(../../../assets/svg/instagram.svg);}
+
+a#email:hover {background-color: #d93025; background-image: url(../../../assets/svg/email-outline-white.svg);}
+a#GitHub:hover {background-color: #24292e; background-image: url(../../../assets/svg/github-circle-white.svg);}
+a#SinaWeibo:hover {background-color: #fa7d3c; background-image: url(../../../assets/svg/sina-weibo-white.svg);}
+a#bilibili:hover {background-color: #fb7299; background-image: url(../../../assets/svg/bilibili-white.png);}
+a#YouTube:hover {background-color: #ff0000; background-image: url(../../../assets/svg/youtube-white.svg);}
+a#Instagram:hover {background-color: #ae39ae; background-image: url(../../../assets/svg/instagram-white.svg);}

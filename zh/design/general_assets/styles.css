@@ -1,0 +1,267 @@
+body {
+	font-family: Microsoft YaHei, PingFangSC-Regular;
+    margin: 0px;
+}
+
+p {
+	word-wrap: break-word;
+}
+
+div#body {
+    width: 684px;
+    margin: 0px auto;
+    margin-bottom: 120px;
+    height: auto;
+}
+
+hr {
+	height: 0px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-color: #c6c8cc;
+}
+
+@media (min-width: 820px){
+	div#body {width: 684px;}
+}
+@media (max-width: 819px){
+	div#body {width: 342px;}
+}
+
+/*///////////////////顶部导航///////////////////*/
+
+div#nav {
+	z-index: 99;
+}
+
+div#nav-fixed-box {
+	position: fixed;
+	height: 80px;
+	width: 80px;
+    z-index: 99;
+}
+
+div#nav-body {
+	width: 100%;
+	top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a#home-logo {
+    display: block;
+	position: relative;
+	z-index: 99;
+	border-radius: 50%;
+	background-color: rgb(32,33,36);
+	background-image: url(../../../logo/GKP-1907-outline-w-502x502.png);
+	background-size: 42px;
+	background-position: center;
+	background-repeat: no-repeat;
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+    cursor: pointer;
+}
+
+@media (min-width: 820px){
+    div#nav-fixed-box {
+        top: 0px;
+        bottom: auto;
+        left: 0px;
+    }
+    a#home-logo {    
+        width: 56px;
+        height: 56px;
+        left: 12px;
+        top: 12px;
+    }
+}
+
+@media (max-width: 819px){
+    div#nav-fixed-box{
+        top: auto;
+        bottom: 24px;
+        left: 24px
+    }
+    a#home-logo {    
+        width: 64px;
+        height: 64px;
+        left: 8px;
+        top: 8px;
+    }
+}
+
+/*Title in div#body*/
+
+div#title-bar {
+    width: 100%;
+    margin: 0px;
+    height: 80px;
+}
+
+a#back-button {
+    position: relative;
+    float: left;
+    width: 32px;
+    height: 32px;
+    display: block;
+    padding: 8px;
+    top: 16px;
+    background-image: url(../../../assets/svg/arrow-left.svg);
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+a#back-button:hover {
+    background-color: rgba(158,158,158,.2);
+}
+
+div#title-bar > h1 {
+    position: relative;
+    margin: 0px;
+    float: left;
+    font-size: 24px;
+    top: 23px;
+}
+
+div#title-bar > h1 > span {
+    font-weight: normal;
+}
+
+@media (min-width: 972px){
+    a#back-button {
+        left: -64px;
+    }
+    div#title-bar > h1 {
+        left: -48px;
+    }
+}
+@media (max-width: 971px){
+    a#back-button {
+        left: 0px;
+    }
+    div#title-bar > h1 {
+        left: 16px;
+    }
+}
+
+
+/*Presentation Box*/
+
+div.presentation-box {
+    float: left;
+    margin: 12px;
+    width: 318px;
+    height: 360px;
+    text-align: center;
+}
+
+div.presentation-box > img {
+    width: 256px;
+    height: 256px;
+}
+
+div.presentation-box > p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div.presentation-box > p > a {
+    text-decoration: none;
+    color: #adafb3;
+    font-weight: normal;
+}
+
+div.presentation-box > p > a:hover {
+    text-decoration-line: underline;
+}
+
+div.shadow-img > img {
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+.round-corner > img {
+    border-radius: 50%;
+}
+
+/*介绍*/
+
+p#intro {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+p#intro > span {
+    font-weight: bold;
+}
+
+/*链接按钮*/
+
+a.round-link-button {
+    display: block;
+    height: 48px;
+    width: 48px;
+    margin-top: 0px;
+    margin-left: 16px;
+    margin-bottom: 32px;
+    float: right;
+    border-radius: 24px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-duration: 0.2s;
+}
+
+a.round-link-button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+a#github-repo {
+    background-image: url(../../../assets/svg/github-circle.svg);
+}
+
+a#official-website {
+    background-image: url(../../../assets/svg/web.svg);
+}
+
+a.extended-link-button {
+    display: block;
+    height: 48px;
+    width: auto;
+    margin-top: 0px;
+    margin-left: 16px;
+    margin-bottom: 32px;
+    float: right;
+    border-radius: 24px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+    transition-duration: 0.2s;
+}
+
+a.extended-link-button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+a.extended-link-button >  img {
+    float: left;
+    height: 24px;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+a.extended-link-button > p {
+    float: left;
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    margin: 12px 16px 12px 8px;
+}

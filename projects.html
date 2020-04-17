@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>GrakePCH</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link href="index/styles.css" type="text/css" rel="stylesheet" />
+	<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!--meta name="theme-color" content="#3d3d3d"-->
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?6e0713685b72fd5ac0907a2767586187";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+
+<body>
+
+	<div id="nav">
+		<div id="nav-fixed-box">
+			<div id="nav-body">
+				<div id="nav-FAB" onclick="
+				var element = document.getElementById('welcome-screen');
+				element.scrollIntoView({behavior: 'smooth', block: 'start'});"></div>
+				<!--<img id="nav-logo-words" src="logo/logo_pixelwords_736x192.png" />-->
+				<!--img id="nav-logo" src="logo/GKP-2019-0-outline-medium-fill-bg.svg" onclick="
+				var element = document.getElementById('welcome-screen');
+				element.scrollIntoView({behavior: 'smooth', block: 'start'});"/-->
+
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.7.2.min.js"></script>
+	<script>
+
+		autoscrolltop();
+		function autoscrolltop() {
+			//滚动条处于顶端时，标题出现
+			$(function () {
+				$(window).scroll(function () {
+					if ($(window).scrollTop() < 64) {
+						$("#nav-logo").fadeOut(100);
+					}
+					else {
+						$("#nav-logo").fadeIn(100);
+					}
+				});
+			});
+
+		}
+
+	</script>
+
+
+
+	<div id="welcome-screen">
+		
+		<h1 id="GKP-title"> GrakePCH </h1>
+
+		<img id="logo-center" src="logo/GKP-1907-transparent-475x475.png"></img>
+
+		<!--div id="representative-box" class="cg" onclick="window.location.href='zh/minecraft/9-squares.html'">
+			<div id="r-9S-logo"></div>
+			<div id="r-9S-title"></div>
+		</div-->
+		<!--div id="welcome-screen-box">
+
+			<div id="representative">
+				<div id="r-title">
+					<p>代表作品</p>
+				</div>
+				<div class="cc" id="center-banner" onclick="window.location.href='zh/minecraft/9-squares.html'"></div>
+			</div>
+
+			
+
+		</div-->
+
+		
+	</div>
+
+	<div id="bottom-nav-background"></div>
+
+	<div id="bottom-FAB" onclick="
+	var element = document.getElementById('welcome-screen');
+	element.scrollIntoView({behavior: 'smooth', block: 'start'});"></div>
+
+	<div id="category">
+
+		<div class="cg" id="mc" onclick="
+			var element = document.getElementById('anchor-mc');
+			element.scrollIntoView({behavior: 'smooth', block: 'start'});">
+			<img src="assets/svg/cube-outline.svg" />
+			<p>Minecraft作品</p>
+		</div>
+
+		<div class="cg" id="tp" onclick="
+			var element = document.getElementById('anchor-tp');
+			element.scrollIntoView({behavior: 'smooth', block: 'start'});">
+			<img src="assets/svg/grid.svg" />
+			<p>魔方手工改造</p>
+		</div>
+
+		<div class="cg" id="gd" onclick="
+			var element = document.getElementById('anchor-gd');
+			element.scrollIntoView({behavior: 'smooth', block: 'start'});">
+			<img src="assets/svg/pencil-box-outline.svg" />
+			<p>平面设计作品</p>
+		</div>
+
+		<div class="cg" id="mw" onclick="
+		var element = document.getElementById('anchor-mw');
+		element.scrollIntoView({behavior: 'smooth', block: 'start'});">
+			<img src="assets/svg/music-note.svg" />
+			<p>原创音乐作品</p>
+		</div>
+
+	</div>
+
+
+	<!--script type="text/javascript">
+		autodivheight();
+		function autodivheight() { //函数：获取尺寸
+			//获取浏览器窗口高度
+			var winHeight = 0;
+			if (window.innerHeight)
+				winHeight = window.innerHeight;
+			else if ((document.body) && (document.body.clientHeight))
+				winHeight = document.body.clientHeight;
+			//通过深入Document内部对body进行检测，获取浏览器窗口高度
+			if (document.documentElement && document.documentElement.clientHeight)
+				winHeight = document.documentElement.clientHeight;
+			//DIV高度为浏览器窗口的高度
+			document.getElementById("welcome-screen").style.height = winHeight + "px";
+			
+			var logo = document.getElementById('logo-center');
+			var halfLogoWidth = 0.5 * logo.clientWidth;
+			document.getElementById('logo-center').style.marginLeft = "-" + halfLogoWidth + "px";
+			document.getElementById('logo-center').style.marginTop = "-" + halfLogoWidth + "px";
+		}
+		window.onresize = autodivheight; //浏览器窗口发生变化时同时变化DIV高度
+	</script-->
+
+
+	<div id="body">
+		
+		<!--///////////////////Minecraft///////////////////-->
+
+		<div id="anchor-mc"></div>
+
+		<div id="minecraft" class="categorys-container">
+
+			<div class="title" id="body-mc">
+				<img src="assets/svg/cube-outline-white.svg" />
+				<p>Minecraft作品</p>
+			</div>
+
+			<div class="creations-list" id="mc-creations-list">
+
+				<div class="creations-list-body cc" id="clb-vid" onclick="window.open('https://www.bilibili.com/video/av64793130')">
+					<div class="clpic">
+						<div class="clico open-in-new"></div>
+					</div>
+					<div class="clbody">
+						<p class="clsubtit">模型展示视频</p>
+						<p class="cltitle">在Minecraft里做一个合成玉</p>
+						<p class="clintro">明日方舟相关</p>
+					</div>
+				</div>
+
+				<div class="creations-list-body cc" id="clb1" onclick="window.location.href='zh/minecraft/9-squares.html'">
+					<div class="clpic">
+						<div class="clico arrow-right"></div>
+					</div>
+					<div class="clbody">
+						<p class="clsubtit">材质资源包</p>
+						<p class="cltitle">9-SQuares 九宫格材质</p>
+						<p class="clintro">GrakePCH代表作品</p>
+					</div>
+				</div>
+
+				<div class="creations-list-body cc" id="clb-bpdlc" onclick="window.location.href='zh/minecraft/blockpixeldlc.html'">
+					<div class="clpic">
+						<div class="clico arrow-right"></div>
+					</div>
+					<div class="clbody">
+						<p class="clsubtit">材质资源包</p>
+						<p class="cltitle">方块概念DLC</p>
+						<p class="clintro">RainbowPixel团队旗下GrakePCH作品</p>
+					</div>
+				</div>
+
+				<div class="creations-list-body cc" id="clb2" onclick="window.open('http://www.mcbbs.net/thread-625535-1-1.html')">
+					<div class="clpic">
+						<div class="clico open-in-new"></div>
+					</div>
+					<div class="clbody">
+						<p class="clsubtit">Java版解谜地图</p>
+						<p class="cltitle">寻找半木半石制按钮</p>
+						<p class="clintro">寻找按钮系列之一，<br/>本人的解密地图第一作！</p>
+					</div>
+				</div>
+
+				<div class="creations-list-body cc" id="clb3" onclick="window.open('http://tieba.baidu.com/p/4763958915')">
+					<div class="clpic">
+						<div class="clico open-in-new"></div>
+					</div>
+					<div class="clbody">
+						<p class="clsubtit">模组整合包</p>
+						<p class="cltitle">真实·探索·原版优化</p>
+					</div>
+				</div>
+
+				<div class="creations-list-body cc" id="clb4" onclick="window.open('http://www.mcbbs.net/thread-665123-1-1.html')">
+					<div class="clpic">
+						<div class="clico open-in-new"></div>
+					</div>
+					<div class="clbody">
+						<p class="clsubtit">Java版解谜地图</p>
+						<p class="cltitle">寻找钻石按钮</p>
+						<p class="clintro">寻找按钮系列之二，<br/>越开越大的脑洞！</p>
+					</div>
+				</div>
+
+				<div class="clear"></div>
+
+			</div>
+
+		</div>
+
+		<!--///////////////////魔方手工改造///////////////////-->
+
+		<div id="anchor-tp"></div>
+
+		<div id="twistypuzzle" class="categorys-container">
+
+			<div class="title" id="body-tp">
+				<img src="assets/svg/grid-white.svg" />
+				<p>魔方手工改造</p>
+			</div>
+
+			<div class="creations-list" id="tp-creations-list">
+				
+				<div class="creations-list-body cc" id="cltp1" onclick="window.open('http://bbs.mf8-china.com/forum.php?mod=viewthread&tid=107164')">
+					<div class="clpic">
+						<div class="clico open-in-new"></div>
+					</div>
+					<div class="clbody">
+						<p class="clsubtit">MOD</p>
+						<p class="cltitle">五边形331</p>
+						<p class="clintro">完成于2017年|白色|初试改变魔方外形</p>
+					</div>
+				</div>
+
+				<div class="creations-list-body cc" id="cltp2" onclick="window.open('http://bbs.mf8-china.com/forum.php?mod=viewthread&tid=100311')">
+					<div class="clpic">
+						<div class="clico open-in-new"></div>
+					</div>
+					<div class="clbody">
+						<p class="clsubtit">MOD</p>
+						<p class="cltitle">四阶捆绑两轴</p>
+						<p class="clintro">完成于2013年|白色|纸片粘合</p>
+					</div>
+				</div>
+
+				<div class="creations-list-body cc" id="cltp3" onclick="window.open('http://bbs.mf8-china.com/forum.php?mod=viewthread&tid=91676')">
+					<div class="clpic">
+						<div class="clico open-in-new"></div>
+					</div>
+					<div class="clbody">
+						<p class="clsubtit">MOD</p>
+						<p class="cltitle">三阶捆绑两轴</p>
+						<p class="clintro">完成于2012年|黑色|纸片粘合</p>
+					</div>
+				</div>
+
+				<div class="clear"></div>
+
+			</div>
+
+		</div>
+
+		<!--///////////////////平面设计作品///////////////////-->
+
+		<div id="anchor-gd"></div>
+
+		<div id="graphicdesign" class="categorys-container">
+
+			<div class="title" id="body-gd">
+				<img src="assets/svg/pencil-box-outline-white.svg" />
+				<p>平面设计作品</p>
+			</div>
+
+			<div class="creations-list" id="gd-creations-list">
+
+				<div class="creations-list-body cc-una" id="clgd1">
+					<p id="gkp-logohistitle">个人logo进化史</p>
+					<div id="gkp-logohislist">
+						<div class="gkp-logohis" id="yb2011"><p>&lt;2011</p></div>
+						<div class="gkp-logohis" id="y2012"><p>2012</p></div>
+						<div class="gkp-logohis" id="y2014-01"><p>2014.1</p></div>
+						<div class="gkp-logohis" id="y2014-03"><p>2014.3</p></div>
+						<div class="gkp-logohis" id="y2014-06"><p>2014.6</p></div>
+						<div class="gkp-logohis" id="y2015-09"><p>2015.9</p></div>
+						<div class="gkp-logohis" id="y2016-04"><p>2016.4</p></div>
+						<div class="gkp-logohis" id="y2017-05"><p>2017.5</p></div>						
+					</div>
+				</div>
+
+				<div class="creations-horizontal-list" id="app-icon-design">
+					<div class="horizontal-list-quarter" id="app-eaxt">
+						<div></div><p>食验</p>
+					</div>
+					<div class="horizontal-list-quarter" id="app-fragMem" onclick="window.location.href='zh/design/fragmem.html'">
+						<div></div><p>碎记</p>
+					</div>
+					<div class="horizontal-list-quarter" id="app-bmap" onclick="window.location.href='zh/design/bmap.html'">
+						<div></div><p>Bmap</p>
+					</div>
+					<div class="horizontal-list-quarter" id="app-mereNews">
+						<div></div><p>Mere 新闻</p>
+					</div>
+				</div>
+
+				<div class="creations-list-body cc" id="gzt-fd" onclick="window.location.href='zh/design/gztime_fd.html'">
+					<div class="clpic">
+						<div class="clico arrow-right"></div>
+					</div>
+					<div class="clbody">
+						<p class="clsubtit">logo设计</p>
+						<p class="cltitle">GZTime logo (Fluent Design)</p>
+						<p class="clintro">设计于2019年</p>
+					</div>
+				</div>
+
+				<div class="creations-list-body cc" id="ocnw" onclick="window.location.href='zh/design/oatcity.html'">
+					<div class="clpic">
+						<div class="clico arrow-right"></div>
+					</div>
+					<div class="clbody">
+						<p class="clsubtit">logo设计</p>
+						<p class="cltitle">OatCity logo</p>
+						<p class="clintro">设计于2019年</p>
+					</div>
+				</div>
+				
+				<div class="creations-list-body cc" id="clgd3" onclick="window.location.href='zh/design/willandalexdrones.html'">
+					<div class="clpic">
+						<div class="clico arrow-right"></div>
+					</div>
+					<div class="clbody">
+						<p class="clsubtit">logo设计</p>
+						<p class="cltitle">Will&AlexDrones logo</p>
+						<p class="clintro">设计于2018年</p>
+					</div>
+				</div>
+
+				<div class="creations-list-body cc" id="clgd2" onclick="window.location.href='zh/design/guzhi.html'">
+					<div class="clpic">
+						<div class="clico arrow-right"></div>
+					</div>
+					<div class="clbody">
+						<p class="clsubtit">logo设计</p>
+						<p class="cltitle">崮郅工作室logo</p>
+						<p class="clintro">设计于2017年</p>
+					</div>
+				</div>
+								
+				<div class="creations-list-body cc" id="clgd5" onclick="window.location.href='zh/design/gztime.html'">
+					<div class="clpic">
+						<div class="clico arrow-right"></div>
+					</div>
+					<div class="clbody">
+						<p class="clsubtit">logo设计</p>
+						<p class="cltitle">GZTime logo（经典）</p>
+						<p class="clintro">设计于2017年</p>
+					</div>
+				</div>
+
+				<div class="clear"></div>
+
+			</div>
+
+		</div>
+
+		<!--///////////////////原创音乐作品///////////////////-->
+
+		<div id="anchor-mw"></div>
+
+		<div id="musicworks" class="categorys-container">
+
+			<div class="title" id="body-mw">
+				<img src="assets/svg/music-note-white.svg" />
+				<p>原创音乐作品</p>
+			</div>
+
+			<div class="creations-list" id="mw-creations-list">
+
+				<div class="creations-list-body cc" id="clmw1" onclick="window.open('https://www.bilibili.com/video/av10890275')">
+					<div class="clpic">
+						<div class="clico open-in-new"></div>
+					</div>
+					<div class="clbody">
+						<p class="clsubtit">随性小作</p>
+						<p class="cltitle">波粒二象性</p>
+						<p class="clintro">借用了部分黑乐谱的元素 <br/> 发布于2017.5.28</p>
+					</div>
+				</div>
+	
+				<div class="creations-list-body cc" id="clmw2" onclick="window.open('https://www.bilibili.com/video/av9084985')">
+					<div class="clpic">
+						<div class="clico open-in-new"></div>
+					</div>
+					<div class="clbody">
+						<p class="clsubtit">随性小作</p>
+						<p class="cltitle">排列组合</p>
+						<p class="clintro">Permutation <br/> 发布于2017.3.11</p>
+					</div>
+				</div>
+
+				<div class="clear"></div>
+
+			</div>
+
+		</div>
+
+		<!--///////////////////人脉///////////////////-->
+
+		<div id="connections">
+
+			<div class="title">
+				<img src="assets/svg/account-multiple.svg" />
+				<p>人脉</p>
+			</div>
+
+			<div id="cards-container">
+
+				<div class="cards" id="c6h5no2">
+
+					<div class="pic" id="logo-c6h5no2">
+						<div class="connection-link">
+							<a class="website" href="https://c6h5-no2.github.io/" target="_blank"></a>
+							<a class="github" href="https://github.com/C6H5-NO2" target="_blank"></a>
+						</div>
+					</div>
+
+					<div class="connection-title">
+						<p>C6H5-NO2</p>
+					</div>
+
+				</div>
+
+				<div class="cards" id="ethans">
+
+					<div class="pic" id="logo-ethans">
+						<div class="connection-link">
+							<a class="website" href="https://ethans.me/about" target="_blank"></a>
+							<a class="github" href="https://github.com/nczitzk" target="_blank"></a>
+						</div>
+					</div>
+
+					<div class="connection-title">
+						<p>Ethan Shen</p>
+					</div>
+
+				</div>
+
+				<div class="cards" id="gztime">
+
+					<div class="pic" id="logo-gztime">
+						<div class="connection-link">
+							<a class="website" href="https://gztimehacker.github.io/" target="_blank"></a>
+							<a class="github" href="https://github.com/GZTimeHacker" target="_blank"></a>
+						</div>
+					</div>
+
+					<div class="connection-title">
+						<p id="title-gztime">GZTime</p>
+					</div>
+
+				</div>
+
+				<div class="cards" id="hurrypeng">
+
+					<div class="pic" id="logo-hurrypeng">
+						<div class="connection-link">
+							<a class="github" href="https://github.com/HurryPeng" target="_blank"></a>
+						</div>
+					</div>
+
+					<div class="connection-title">
+						<p>HurryPeng</p>
+					</div>
+
+				</div>	
+				
+				<div class="cards" id="jakobz">
+
+					<div class="pic" id="logo-jakobz">
+						<div class="connection-link">
+							<a class="website" href="https://blockpixel.net/" target="_blank"></a>
+							<a class="twitter" href="https://twitter.com/Jakob_zero" target="_blank"></a>
+						</div>
+					</div>
+
+					<div class="connection-title">
+						<p>Jakob.zero</p>
+					</div>
+
+				</div>
+
+				<div class="cards" id="pairman">
+
+					<div class="pic" id="logo-pairman">
+						<div class="connection-link">
+							<a class="website" href="https://pairman.github.io/PTP/" target="_blank"></a>
+							<a class="github" href="https://github.com/Pairman" target="_blank"></a>
+						</div>
+					</div>
+
+					<div class="connection-title">
+						<p>Pairman</p>
+					</div>
+
+				</div>
+
+				<div class="cards" id="willwu">
+
+					<div class="pic" id="logo-willwu">
+						<div class="connection-link">
+							<a class="youtube" href="https://www.youtube.com/channel/UCADPoa0cMPc_twrxZQMHHhw" target="_blank"></a>
+							<a class="insta" href="https://www.instagram.com/willandalexdrones/" target="_blank"></a>
+						</div>
+					</div>
+
+					<div class="connection-title">
+						<p>Will Wu</p>
+					</div>
+
+				</div>
+	
+
+
+
+				<div class="clear"></div>
+
+			</div>
+
+		</div>
+
+		<hr id="info-hr"/>
+		
+		<div id="info">
+			<div id="logo-outline"></div>
+			<div id="info-body">
+				<p id="copyright"><span>© 2019 GrakePCH</span></p>
+				<div id="contact-list">
+					<a class="contact-list-body" id="email" href="mailto:grakepch@gmail.com"><div></div></a>
+					<a class="contact-list-body" id="GitHub" href="https://github.com/GrakePch" target="_blank"><div></div></a>
+					<a class="contact-list-body" id="SinaWeibo" href="https://weibo.com/u/3321722980" target="_blank"><div></div></a>
+					<a class="contact-list-body" id="bilibili" href="https://space.bilibili.com/1020137" target="_blank"><div></div></a>
+					<a class="contact-list-body" id="Coolapk" href="http://www.coolapk.com/u/935752" target="_blank"><div></div></a>
+					<a class="contact-list-body" id="Twitter" href="https://twitter.com/Grake_Pch" target="_blank"><div></div></a>
+				</div>
+			</div>
+		</div>
+
+		<div id="bottom">
+
+		</div>
+
+	</div>
+
+	<script>
+
+	</script>
+
+</body>
+
+</html>

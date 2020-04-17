@@ -1,0 +1,247 @@
+body {
+  font-family: Microsoft YaHei, PingFangSC-Regular;
+  margin: 0px;
+}
+
+div#header {
+  display: none;
+  width: 100%;
+  height: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #20252b;
+  text-align: center;
+  z-index: 99;
+  position: absolute;
+  top: 0px;
+}
+
+div#header2 {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0px;
+}
+
+div#floatinglogo {
+  position: fixed;
+  z-index: 99;
+  background-color: rgb(32,33,36);
+  background-image: url(img/bpdlc-logo-white.png);
+  background-position: center;
+  background-size: 32px;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  cursor: pointer;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+@media (min-width: 820px) {
+  div#floatinglogo {
+    left: 12px;
+    top: 12px;
+    width: 56px;
+    height: 56px;
+  }
+}
+
+div#title-container {
+  width: 100%;
+  height: 320px;
+  margin: 0;
+}
+
+div#title-container > h1 {
+  text-align: center;
+  margin: 0px;
+  padding: 139px 0px;
+}
+
+div#blank {
+  height: 130px;
+}
+
+div#body {
+  width: 660px;
+  margin: 0 auto;
+}
+
+div.box {
+  margin: 0 0 128px 0;
+  padding: 128px 0 0 0;
+  height: auto;
+  position: relative;
+}
+
+div#ctmglass {
+  padding-top: 0px;
+}
+
+img.cover {
+  width: 100%;
+}
+
+img.icon {
+  margin-top: 20px;
+  width: 150px;
+  image-rendering: pixelated;
+  float: left;
+}
+
+div.txt {
+  float: left;
+  margin-left: 20px;
+  width: auto;
+}
+
+h1.title {
+}
+
+p.intro > a {
+  color: #000;
+  text-decoration-line: none;
+  font-weight: bold;
+}
+
+p.intro > a:hover {
+  text-decoration-line: underline;
+}
+
+.clear {
+  clear: both;
+}
+
+.button-container {
+  position: absolute;
+  display: block;
+  width: auto;
+  height: 48px;
+  right: 0px;
+  bottom: 0px;
+  }
+
+.button-container > a {
+  float: right;
+  height: 48px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.15);
+  transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  background-color: #fff;
+}
+
+.button-container > a:hover {
+  box-shadow: none;
+}
+
+.download-button {
+  width: 48px;
+  background-image: url(../../../assets/svg/download.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.download-button:hover {
+  background-color: rgb(152, 233, 156);
+}
+
+.external-link-button {
+  width: 175px;
+  margin-right: 12px;
+  text-align: center;
+  line-height: 48px;
+  text-decoration: none;
+  color: #000;
+}
+
+.external-link-button:hover {
+background-color: rgba(158,158,158,.15);
+}
+
+/*///////////////////垫底///////////////////*/
+
+hr#info-hr {
+	height: 0px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	border-color: #c6c8cc;
+}
+
+div#info {
+	margin-top: 0px;
+	width: 100%;
+	height: 343px;
+  color: #adafb3;
+  margin-bottom: 0px;
+}
+
+div#info-logo-container {
+  padding-top: 50px;
+  height: 110px;
+  width: 218px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a#logo-rainbowpixel {
+  float: left;
+  height: 110px;
+  width: 128px;
+  background-image: url(img/rainbowpixel-logo-singlecolor.png);
+  background-size: contain;
+  cursor: pointer;
+}
+
+div#logo-outline {
+  float: left;
+  margin-top: 10px;
+	height: 90px;
+	width: 90px;
+	background-image: url(../../../logo/logo_outline.png);
+	background-size: contain;
+}
+
+div#info-body {
+  margin-left: auto;
+  margin-right: auto;
+  height: 64px;
+  width: min-content;
+}
+
+p#copyright {
+	font-size: 1.5em;
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+
+p#copyright > a {
+  color: #adafb3;
+  text-decoration: none;
+}
+
+p#copyright > a:hover {
+  text-decoration: underline;
+}
+
+div#contact-list {
+	height: 32px;
+	margin-top: 8px;
+}
+
+a.contact-list-body {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin-left: 8px;
+	background-color: #dcdcdc;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 24px;
+	border-radius: 16px;
+	transition: 0.2s cubic-bezier(.4,0,.2,1);
+}
