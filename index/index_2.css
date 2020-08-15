@@ -38,7 +38,7 @@ h1#code-start {
 h1#code-end {
     left: 357px;
     width: 77px;
-    transition: color .4s .6s;
+    transition: color .3s .5s;
     /* transform: translateX(5px); */
 }
 
