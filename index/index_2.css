@@ -28,70 +28,6 @@ h1 {
     filter: invert(33%) sepia(10%) saturate(6408%) hue-rotate(324deg) brightness(107%) contrast(103%);
 }
 
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: #fff;
-    }
-    h1 {
-        color: #000;
-    }
-    #logo-main {    
-        background-color: #fff;
-    }
-    .lines {
-        background-color: #e1e3e5;
-    }
-    h1.codename {
-        color: #e1e3e5;
-    }
-    #logo-animated-container:hover ~ h1 {
-        color: #3e3e3e;
-    }
-}
-
-body {
-    background-color: #fff;
-}
-h1 {
-    color: #000;
-}
-#logo-main {    
-    background-color: #fff;
-}
-.lines {
-    background-color: #e1e3e5;
-}
-h1.codename {
-    color: #e1e3e5;
-}
-#logo-animated-container:hover ~ h1 {
-    color: #3e3e3e;
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #000;
-    }
-    h1 {
-        color: #fff;
-    }
-    #logo-main {    
-        background-color: #000;
-    }
-    .lines {
-        background-color: #1f2022;
-    }
-    h1.codename {
-        color: #1f2022;
-    }
-    #logo-animated-container:hover ~ h1 {
-        color: #fff;
-    }
-    .button {
-        filter: invert(1);
-    }
-}
-
 /* #viewport {
 } */
 
@@ -147,7 +83,7 @@ h1.codename {
     font-family: 'Barlow', sans-serif;
     font-size: 40px;
     font-weight: bold;
-    transition: color .3s .5s, top .3s cubic-bezier(.5,0,0,1), left .3s cubic-bezier(.5,0,0,1);
+    transition: filter .3s .5s, top .3s cubic-bezier(.5,0,0,1), left .3s cubic-bezier(.5,0,0,1);
 }
 
 h1#code-start {
@@ -192,7 +128,7 @@ h1#code-end {
 
     h1#code-start {
         left: 0;
-        transition: color .2s, top .2s ease-in-out, left .2s ease-in-out;
+        transition: filter .2s, top .2s ease-in-out, left .2s ease-in-out;
     }
 
     h1#code-end {
@@ -288,6 +224,34 @@ nav {
 
 #navbg.stay-projects {
     top: 64px;
+}
+
+#right-buttons-container {
+    position: fixed;
+    top: 50vh;
+    right: 8px;
+    width: 48px;
+    height: 120px;
+    transform: translate(0, -50%);
+}
+
+#right-buttons-container div {
+    position: relative;
+    height: 24px;
+    width: 24px;
+    padding: 12px;
+    margin: 8px 0;
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#theme-toggle {
+    background-image: url(../assets/svg/circle-half-full.svg);
+}
+
+#language-switch {
+    background-image: url(../assets/svg/web.svg);
 }
 
 #arrow {

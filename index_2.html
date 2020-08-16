@@ -2,26 +2,73 @@
 <html>
 
 <head>
-	<title>GrakePCH</title>
-	<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <title>GrakePCH</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link href="index/index_2.css" type="text/css" rel="stylesheet" />
+
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/ico/favicon-16x16.png">
+    <link rel="manifest" href="assets/ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="index/index_2.css" type="text/css" rel="stylesheet" />
+    <link href="index/themes/light.css" type="text/css" rel="stylesheet" id="css-light-mode"/>
     <!-- <link href="" type="text/css" rel="stylesheet" />
     <script src=""></script> -->
     <script>
+        // Prepare css link for theme toggle.
+        var darkThemeOn = false;
+
+        var cssLightMode = document.createElement('link');
+        cssLightMode.rel = 'stylesheet';
+        cssLightMode.type = 'text/css';
+        cssLightMode.href = 'index/themes/light.css';
+        cssLightMode.id = "css-light-mode";
+
+        var cssDarkMode = document.createElement('link');
+        cssDarkMode.rel = 'stylesheet';
+        cssDarkMode.type = 'text/css';
+        cssDarkMode.href = 'index/themes/dark.css';
+        cssDarkMode.id = "css-dark-mode";
+
+        function themeToggle() {
+            if (darkThemeOn) {
+                document.getElementById("css-dark-mode").remove();
+                document.getElementsByTagName('head')[0].appendChild(cssLightMode);
+                darkThemeOn = false;
+            } else {
+                document.getElementById("css-light-mode").remove();
+                document.getElementsByTagName('head')[0].appendChild(cssDarkMode);
+                darkThemeOn = true;
+            }
+        }
+
         function fullViewport() {
             var div = document.getElementById("viewport");
-            div.style.height = document.documentElement.clientHeight + "px";
+            div.style.height = window.innerHeight + "px";
             div.style.width = document.documentElement.clientWidth + "px";
         }
 
         function scrollToTop() {
-            document.getElementById('viewport').scrollIntoView({behavior: 'smooth'});
+            document.getElementById('viewport').scrollIntoView({ behavior: 'smooth' });
         }
 
         function scrollToProjects() {
-            document.getElementById('projects').scrollIntoView({behavior: 'smooth'});
+            document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
         }
 
         function navUpdate() {
@@ -43,9 +90,15 @@
         <div id="central-logo">
             <div id="logo-animated-container">
                 <div id="logo-main"></div>
-                <div class="lines" id="deg-0"><div></div></div>
-                <div class="lines" id="deg-120"><div></div></div>
-                <div class="lines" id="deg-240"><div></div></div>
+                <div class="lines" id="deg-0">
+                    <div></div>
+                </div>
+                <div class="lines" id="deg-120">
+                    <div></div>
+                </div>
+                <div class="lines" id="deg-240">
+                    <div></div>
+                </div>
             </div>
             <h1 class="codename" id="code-start">Grake</h1>
             <h1 class="codename" id="code-end">PCH</h1>
@@ -55,9 +108,18 @@
             <div class="navbt button active" id="nav-logo" onclick="scrollToTop();"></div>
             <div class="navbt button" id="nav-projects" onclick="scrollToProjects();"></div>
         </nav>
+        <div id="right-buttons-container">
+            <div class="button" id="theme-toggle" onclick="themeToggle();"></div>
+            <div class="button" id="language-switch"></div>
+        </div>
         <div class="button" id="arrow" onclick="scrollToProjects();"></div>
     </div>
     <div id="projects">
         <h1>Projects</h1>
     </div>
+
+    <script>
+    </script>
 </body>
+
+</html>

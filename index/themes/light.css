@@ -1,0 +1,19 @@
+body {
+    background-color: #fff;
+}
+h1 {
+    color: #000;
+}
+#logo-main {    
+    background-color: #fff;
+}
+.lines {
+    background-color: #e1e3e5;
+}
+h1.codename {
+    color: #e1e3e5;
+}
+#logo-animated-container:hover ~ h1 {
+    /* color: #3e3e3e; */
+    filter: invert(1);
+}

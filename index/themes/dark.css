@@ -1,0 +1,22 @@
+body {
+    background-color: #000;
+}
+h1 {
+    color: #fff;
+}
+#logo-main {    
+    background-color: #000;
+}
+.lines {
+    background-color: #1f2022;
+}
+h1.codename {
+    color: #1f2022;
+}
+#logo-animated-container:hover ~ h1 {
+    /* color: #fff; */
+    filter: invert(1);
+}
+.button {
+    filter: invert(1);
+}
