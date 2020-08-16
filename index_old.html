@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>GrakePCH</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="globalStyles/listType.css" type="text/css" rel="stylesheet" />
+	<link href="indexpageAssets/styles.css" type="text/css" rel="stylesheet" />
+	<script src="globalJs/threeInOneMotionPic.js"></script>
+	<script src="globalJs/darkModeForListTypePages.js"></script>
+	<script src="globalJs/drawerForListTypePages.js"></script>
+</head>
+
+<body>
+	<div id="float-drawer-button" onclick="drawerSwitcher();FDBicoIsHovered()" onmouseover="FDBicoIsHovered()" onmouseleave="FDBicoIsNotHovered()"><div id="FDB-bg" class="ico-gp"></div></div>
+
+	<div id="minimal-drawer-list" class="light-dark-theme light-mode">	
+		<a class="min-items active" id="min-drawer-home"><div></div></a>
+		<a class="min-items" id="min-drawer-all-creations" href="projects.html" onmouseover="listBgIsHovered('drawer-all-creations')" onmouseleave="listBgIsNotHovered('drawer-all-creations')"><div></div></a>
+		<a class="min-items hidden" id="min-drawer-friends"><div></div></a>
+		<div class="clear"></div>
+	</div>
+
+	<div id="mobile-bottom-nav" class="light-dark-theme light-mode">
+		<div id="m-nav-drawer-box" class="drawer-off light-dark-theme light-mode">
+			<div id="m-list-in-drawer">
+				<a class="items active" id="m-drawer-home"><div class="mDLi-ico"></div><div>首页</div></a>
+				<a class="items" id="m-drawer-all-creations" href="projects.html"><div class="mDLi-ico"></div><div>全部作品</div></a>
+				<a class="items hidden" id="m-drawer-friends"></a>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<a id="m-nav-drawer-button" onclick="drawerSwitcherMobile();"><div id="mNDB-bg" class="ico-gp"></div></a>
+		<a id="m-nav-title">首页</a>
+		<a id="m-nav-dark-mode-switcher" onclick="darkModeSwitcher()"></a>
+	</div>
+
+	<div id="drawer-box" class="drawer-off light-dark-theme light-mode">
+		<div id="list-in-drawer">
+			<a class="items active" id="drawer-home">首页</a>
+			<a class="items" id="drawer-all-creations" href="projects.html">全部作品</a>
+			<a class="items hidden" id="drawer-friends"></a>
+			<div class="clear"></div>
+		</div>
+		<div id="function-buttons-box">
+			<div>
+				<div class="funct-b-item" id="dark-mode-switcher" onclick="darkModeSwitcher()"><div></div></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="whole-page-overlay" class="" onclick="drawerSwitcher();"></div>
+	<div id="m-whole-page-overlay" class="" onclick="drawerSwitcherMobile();"></div>
+
+	<div id="main-body">
+		<div id="title_block" class="light-dark-theme light-mode">
+
+		</div>
+		<div class="width660-box">
+			<img class="width660-autoH" src="indexpageAssets/img/cover_bpext_660x350.png"/>
+			<div class="left-txt">
+				<p class="categorytxt">Minecraft 资源包项目</p>
+				<h1 class="title-under-img">方块概念扩展</h1>
+			</div>
+			<a class="right-button internal-link light-dark-theme light-mode" href="bpext.html"></a>
+		</div>
+
+		<div class="width660-box">
+			<img class="width660-autoH" src="indexpageAssets/img/cover_carrack_660x371.png"/>
+			<div class="left-txt">
+				<p class="categorytxt">游戏内拍摄电影</p>
+				<h1 class="title-under-img">克拉克：离家</h1>
+			</div>
+			<a class="right-button external-link light-dark-theme light-mode" href="https://www.bilibili.com/video/BV1ht4y1U7eT/" target="_blank"></a>
+		</div>
+	</div>
+</body>
+
+</html>
