@@ -1,9 +1,31 @@
 body {
     margin: 0;
+    user-select: none;
 }
 
 h1 {
     margin: 0;
+}
+
+.button {
+    transition: background-color .2s, filter .2s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(128, 128, 128, .1);
+}
+
+.button:hover:not(.active) {
+    filter: invert(33%) sepia(10%) saturate(6408%) hue-rotate(324deg) brightness(107%) contrast(103%);
+}
+
+.button:active:not(.active) {
+    background-color: rgba(128, 128, 128, .2);
+}
+
+.button.active {
+    filter: invert(33%) sepia(10%) saturate(6408%) hue-rotate(324deg) brightness(107%) contrast(103%);
 }
 
 /* #viewport {
@@ -31,7 +53,7 @@ h1 {
     width: 100px;
     height: 100px;
     background-color: #fff;
-    background-image: url(../logo/GKP-2003-mainlogo.svg);
+    background-image: url(../logo/GKP-2003-mainlogo-red.svg);
     background-position: center;
     background-size: 84px;
     background-repeat: no-repeat;
@@ -162,4 +184,78 @@ h1#code-end {
     h1#code-end {
         left: 110px;
     }    
+}
+
+nav {
+    position: fixed;
+    top: 50vh;
+    left: 8px;
+    width: 48px;
+    height: 120px;
+    transform: translate(0, -50%);
+}
+
+.navbt {
+    position: relative;
+    height: 24px;
+    width: 24px;
+    padding: 12px;
+    margin: 8px 0;
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 199;
+}
+
+.navbt#nav-logo {
+    background-image: url(../logo/GKP-2003-mainlogo.svg);
+    background-size: 18px;
+}
+
+.navbt#nav-projects {
+    background-image: url(../assets/svg/view-grid-outline.svg);
+}
+
+#navbg {
+    position: absolute;
+    width: 3px;
+    height: 48px;
+    background-color: #dd3d3d;
+    transition: top .1s ease-in-out;
+    z-index: 198;
+}
+
+#navbg.stay-logo {
+    top: 8px;
+}
+
+#navbg.stay-projects {
+    top: 64px;
+}
+
+#arrow {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    height: 24px;
+    width: 24px;
+    padding: 12px;
+    transform: translate(-50%, 0);
+    background-image: url(../assets/svg/chevron-down.svg);
+    background-position: center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+}
+
+/*Second Page*/
+
+#projects {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Barlow', sans-serif;
+    margin: 8px auto;
 }

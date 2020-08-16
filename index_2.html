@@ -12,13 +12,33 @@
     <script>
         function fullViewport() {
             var div = document.getElementById("viewport");
-            div.style.height = window.innerHeight + "px";
-            div.style.width = window.innerWidth + "px";
+            div.style.height = document.documentElement.clientHeight + "px";
+            div.style.width = document.documentElement.clientWidth + "px";
+        }
+
+        function scrollToTop() {
+            document.getElementById('viewport').scrollIntoView({behavior: 'smooth'});
+        }
+
+        function scrollToProjects() {
+            document.getElementById('projects').scrollIntoView({behavior: 'smooth'});
+        }
+
+        function navUpdate() {
+            if (window.scrollY > 0.5 * document.documentElement.clientHeight) {
+                document.getElementById('navbg').classList.replace('stay-logo', 'stay-projects');
+                document.getElementById('nav-logo').classList.remove('active');
+                document.getElementById('nav-projects').classList.add('active');
+            } else {
+                document.getElementById('navbg').classList.replace('stay-projects', 'stay-logo');
+                document.getElementById('nav-logo').classList.add('active');
+                document.getElementById('nav-projects').classList.remove('active');
+            }
         }
     </script>
 </head>
 
-<body onload="fullViewport();" onresize="fullViewport();">
+<body onload="fullViewport();" onresize="fullViewport();" onscroll="navUpdate();">
     <div id="viewport">
         <div id="central-logo">
             <div id="logo-animated-container">
@@ -30,5 +50,14 @@
             <h1 class="codename" id="code-start">Grake</h1>
             <h1 class="codename" id="code-end">PCH</h1>
         </div>
+        <nav>
+            <div class="stay-logo" id="navbg"></div>
+            <div class="navbt button active" id="nav-logo" onclick="scrollToTop();"></div>
+            <div class="navbt button" id="nav-projects" onclick="scrollToProjects();"></div>
+        </nav>
+        <div class="button" id="arrow" onclick="scrollToProjects();"></div>
+    </div>
+    <div id="projects">
+        <h1>Projects</h1>
     </div>
 </body>
