@@ -15,36 +15,37 @@ h1 {
     left: 50vw;
     transform: translate(-50%, -50%);
     height: 275px;
-    width: 434px;
+    width: 426px;
     display: flex;
     flex-direction: row;
 }
 
 h1.codename {
     position: absolute;
-    padding-top: 115px;
+    padding-top: 111px;
     color: #e1e3e5;
-    font-family: Bahnschrift, sans-serif, system-ui;
+    font-family: 'Barlow', sans-serif;
     font-size: 40px;
+    font-weight: bold;
 }
 
 h1#code-start {
     left: 0px;
-    width: 107px;
+    width: 102px;
     transition: color .2s;
     /* transform: translateX(3px); */
 }
 
 h1#code-end {
-    left: 357px;
-    width: 77px;
+    left: 352px;
+    width: 74px;
     transition: color .3s .5s;
     /* transform: translateX(5px); */
 }
 
 #logo-animated-container {
     position: absolute;
-    left: 102px;
+    left: 97px;
     width: 100px;
     height: 100px;
     margin: 87.5px 100px 87.5px 50px;
