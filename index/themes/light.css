@@ -17,3 +17,6 @@ h1.codename {
     /* color: #3e3e3e; */
     filter: invert(1);
 }
+nav#mobile-bottom-nav {
+    background-color: #fff;
+}

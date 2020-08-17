@@ -20,3 +20,6 @@ h1.codename {
 .button {
     filter: invert(1);
 }
+nav#mobile-bottom-nav {
+    background-color: #000;
+}

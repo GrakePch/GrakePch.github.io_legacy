@@ -59,8 +59,10 @@
 
         function fullViewport() {
             var div = document.getElementById("viewport");
+            var mobileNav = document.getElementById("mobile-bottom-nav");
             div.style.height = window.innerHeight + "px";
             div.style.width = document.documentElement.clientWidth + "px";
+            mobileNav.style.width = document.documentElement.clientWidth - 16 + "px";
         }
 
         function scrollToTop() {
@@ -80,6 +82,12 @@
                 document.getElementById('navbg').classList.replace('stay-projects', 'stay-logo');
                 document.getElementById('nav-logo').classList.add('active');
                 document.getElementById('nav-projects').classList.remove('active');
+            }
+
+            if (window.scrollY > 1) {
+                document.getElementById("mobile-bottom-nav").style.boxShadow = "0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23)";
+            } else {
+                document.getElementById("mobile-bottom-nav").style.boxShadow = "none";
             }
         }
     </script>
@@ -103,7 +111,8 @@
             <h1 class="codename" id="code-start">Grake</h1>
             <h1 class="codename" id="code-end">PCH</h1>
         </div>
-        <nav>
+
+        <nav id="left-nav-container">
             <div class="stay-logo" id="navbg"></div>
             <div class="navbt button active" id="nav-logo" onclick="scrollToTop();"></div>
             <div class="navbt button" id="nav-projects" onclick="scrollToProjects();"></div>
@@ -112,6 +121,10 @@
             <div class="button" id="theme-toggle" onclick="themeToggle();"></div>
             <div class="button" id="language-switch"></div>
         </div>
+
+        <!-- Mobile navigation bar -->
+        <nav id="mobile-bottom-nav"></nav>
+
         <div class="button" id="arrow" onclick="scrollToProjects();"></div>
     </div>
     <div id="projects">
