@@ -453,51 +453,62 @@ nav#mobile-bottom-nav {
 
 /*Link of Projects*/
 .item-buttons a {
-    display: none;
-    /* visibility: hidden; */
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(../assets/svg/arrow-right.svg);
     background-size: 24px;
     background-repeat: no-repeat;
-    background-position: 16px 16px;
-    opacity: 0;
+    background-position: 16px;
     filter: invert(1);
+    opacity: 0;
+    visibility: hidden;
     z-index: 51;
-    transition: opacity .2s ease-in-out, visibility 0 .2s;
+    transition: opacity .2s cubic-bezier(.5,0,0,1) .05s, visibility 0s .1s;
+    /* width .2s cubic-bezier(.5,0,0,1); */
 }
 
 .item-buttons:hover a {
-    /* visibility: visible; */
-    display: block;
     opacity: 1;
+    visibility: visible;
+}
+
+.item-buttons a.internal-link {
+    background-image: url(../assets/svg/arrow-right.svg);
+}
+
+.item-buttons a.external-link {
+    background-image: url(../assets/svg/arrow-top-right.svg);
 }
 
 /*Lists of Projects*/
 
-#bpext a div {
+#bpext .item-buttons::before {
     background-image: url(../assets/img/projects/bpext.png);
     background-size: 24px;
-    /* image-rendering: pixelated; */
+    background-position: 16px;
+    image-rendering: pixelated;
 }
 
-#n9squares a div {
+#n9squares .item-buttons::before {
     background-image: url(../zh/minecraft/9-squares/img/9S_icon.png);
     background-size: 22px;
+    background-position: 17px;
 }
 
-#pentagon331 a div {
+#pentagon331 .item-buttons::before {
     background-image: url(../assets/img/projects/pentagon-outline.svg);
     background-size: 36px;
+    background-position: 10px;
 }
 
-#bandaged444 a div {
+#bandaged444 .item-buttons::before {
     background-image: url(../assets/img/projects/bandaged333.svg);
     background-size: 30px;
+    background-position: 13px;
 }
 
-#bandaged333 a div {
+#bandaged333 .item-buttons::before {
     background-image: url(../assets/img/projects/bandaged333.svg);
     background-size: 30px;
+    background-position: 13px;
 }
