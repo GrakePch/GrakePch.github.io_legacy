@@ -23,3 +23,10 @@ h1.codename {
 nav#mobile-bottom-nav {
     background-color: #000;
 }
+
+.items > p {
+    color: #fff;
+}
+.item-buttons::before {
+    filter: invert(1);
+}

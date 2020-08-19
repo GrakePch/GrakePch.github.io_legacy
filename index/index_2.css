@@ -421,7 +421,6 @@ nav#mobile-bottom-nav {
     background-repeat: no-repeat;
     background-position: 14px 14px;
 
-    filter: invert(1);
     content: "";
     z-index: 49;
     transition: opacity .2s ease-in-out;
@@ -490,7 +489,7 @@ nav#mobile-bottom-nav {
 }
 
 #n9squares .item-buttons::before {
-    background-image: url(../zh/minecraft/9-squares/img/9S_icon.png);
+    background-image: url(../assets/img/projects/9squares.svg);
     background-size: 22px;
     background-position: 17px;
 }
