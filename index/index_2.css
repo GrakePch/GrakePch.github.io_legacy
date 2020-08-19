@@ -245,6 +245,7 @@ nav#left-nav-container {
     width: 24px;
     padding: 12px;
     margin: 8px 0;
+    border-radius: 50%;
     background-size: 24px;
     background-position: center;
     background-repeat: no-repeat;
@@ -265,6 +266,7 @@ nav#left-nav-container {
     height: 24px;
     width: 24px;
     padding: 12px;
+    border-radius: 50%;
     transform: translate(-50%, 0);
     background-image: url(../assets/svg/chevron-down.svg);
     background-position: center;
@@ -334,11 +336,168 @@ nav#mobile-bottom-nav {
 
 #projects {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
 }
 
 #projects h1 {
     font-family: 'Barlow', sans-serif;
-    margin: 8px auto;
+    margin: 32px auto;
+}
+
+#categories-container {
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    #categories-container {
+        width: 636px;
+    }
+}
+
+@media (max-width: 767px) {
+    #categories-container {
+        width: 200px;
+    }
+}
+
+.categories {
+    width: 200px;
+    margin: 0 6px;
+    float: left;
+}
+
+/*Project Items*/
+.items {
+    position: relative;
+    width: 100%;
+    height: 56px;
+    margin: 8px 0;
+}
+
+/*Project Lastest Updated Years*/
+.items > p {
+    position: absolute;
+    right: 76px;
+    transform: translate(50%, 0);
+    margin: 12px 0;
+    font-family: 'Barlow';
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/*Project Link Buttons*/
+.item-buttons {
+    position: absolute;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: rgba(128, 128, 128, .2);
+    z-index: 50;
+    transition: width .2s cubic-bezier(.5,0,0,1), 
+                border-radius .2s cubic-bezier(.5,0,0,1), 
+                background-color .2s ease-in-out;
+}
+
+.item-buttons:hover {
+    width: 100%;
+    border-radius: 0;
+    background-color: #dd3d3d;
+}
+
+/*Icons of Projects*/
+.item-buttons::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+
+    background-image: url(../assets/img/projects/none.svg);
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: 14px 14px;
+
+    filter: invert(1);
+    content: "";
+    z-index: 49;
+    transition: opacity .2s ease-in-out;
+}
+
+.item-buttons:hover::before  {
+    opacity: 0;
+}
+
+/*Names of Projects*/
+.item-buttons p {
+    position: absolute;
+    right: 76px;
+    transform: translate(50%, 0);
+    width: max-content;
+    margin: 15px 0;
+    font-family: 'Noto Sans SC';
+    font-weight: bold;
+    font-size: 16px;
+    visibility: hidden;
+    color: rgba(255, 255, 255, 0);
+    transition: color .2s ease-in-out .05s;
+}
+
+.item-buttons:hover p {
+    visibility: visible;
+    color: rgb(255, 255, 255);
+}
+
+/*Link of Projects*/
+.item-buttons a {
+    display: none;
+    /* visibility: hidden; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/svg/arrow-right.svg);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 16px 16px;
+    opacity: 0;
+    filter: invert(1);
+    z-index: 51;
+    transition: opacity .2s ease-in-out, visibility 0 .2s;
+}
+
+.item-buttons:hover a {
+    /* visibility: visible; */
+    display: block;
+    opacity: 1;
+}
+
+/*Lists of Projects*/
+
+#bpext a div {
+    background-image: url(../assets/img/projects/bpext.png);
+    background-size: 24px;
+    /* image-rendering: pixelated; */
+}
+
+#n9squares a div {
+    background-image: url(../zh/minecraft/9-squares/img/9S_icon.png);
+    background-size: 22px;
+}
+
+#pentagon331 a div {
+    background-image: url(../assets/img/projects/pentagon-outline.svg);
+    background-size: 36px;
+}
+
+#bandaged444 a div {
+    background-image: url(../assets/img/projects/bandaged333.svg);
+    background-size: 30px;
+}
+
+#bandaged333 a div {
+    background-image: url(../assets/img/projects/bandaged333.svg);
+    background-size: 30px;
 }
