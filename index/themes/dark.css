@@ -24,6 +24,16 @@ nav#mobile-bottom-nav {
     background-color: #000;
 }
 
+.categ-name {
+    background-color: #e1e3e5;
+}
+.categ-name p {
+    color: #000;
+}
+.categ-name::before {
+    filter: invert(0);
+    opacity: .16;
+}
 .items > p {
     color: #fff;
 }
