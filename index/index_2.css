@@ -569,8 +569,8 @@ nav#mobile-bottom-nav {
 
 
 
-#no-category .categ-name::before {
-    background-image: url(../assets/svg/dots-vertical-circle.svg);
+#indie-short .categ-name::before {
+    background-image: url(../assets/svg/movie.svg);
 }
 
 #carrack-film .item-buttons::before {
