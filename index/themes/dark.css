@@ -40,3 +40,6 @@ nav#mobile-bottom-nav {
 .item-buttons::before {
     filter: invert(1);
 }
+.item-buttons:hover::before {
+    filter: invert(0);
+}

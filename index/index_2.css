@@ -445,23 +445,25 @@ nav#mobile-bottom-nav {
 .item-buttons::before {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    width: 56px;
+    height: 56px;
     opacity: 1;
 
     background-image: url(../assets/img/projects/none.svg);
     background-size: 30px;
-    background-position: 13px;
+    background-position: center;
     background-repeat: no-repeat;
 
     content: "";
     z-index: 49;
-    transition: opacity .2s ease-in-out;
+    transition: all .2s cubic-bezier(.5,0,0,1);
 }
 
-.item-buttons:hover::before  {
-    opacity: 0;
+.item-buttons:hover::before {
+    width: 144px;
+    opacity: 0.16;
+    background-size: 60px;
 }
 
 /*Names of Projects*/
@@ -476,6 +478,7 @@ nav#mobile-bottom-nav {
     font-size: 16px;
     visibility: hidden;
     color: rgba(255, 255, 255, 0);
+    z-index: 51;
     transition: color .2s ease-in-out .05s;
 }
 
@@ -520,8 +523,6 @@ nav#mobile-bottom-nav {
 
 #bpext .item-buttons::before {
     background-image: url(../assets/img/projects/bpext.svg);
-    background-size: 24px;
-    background-position: 16px;
 }
 
 #piano-explosion-in-mc .item-buttons::before {
@@ -538,8 +539,6 @@ nav#mobile-bottom-nav {
 
 #n9squares .item-buttons::before {
     background-image: url(../assets/img/projects/9squares.svg);
-    background-size: 22px;
-    background-position: 17px;
 }
 
 #find-the-button-2 .item-buttons::before {
