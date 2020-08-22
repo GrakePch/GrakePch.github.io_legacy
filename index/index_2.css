@@ -461,6 +461,7 @@ nav#mobile-bottom-nav {
     width: 56px;
     height: 56px;
     opacity: 1;
+    border-radius: 28px;
 
     background-image: url(../assets/img/projects/none.svg);
     background-size: 30px;
