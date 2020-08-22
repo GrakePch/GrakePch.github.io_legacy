@@ -410,15 +410,27 @@ nav#mobile-bottom-nav {
     margin: 8px 0;
 }
 
-/*Project Lastest Updated Years*/
+/*Project Lastest Updated Years & Months*/
 .items > p {
     position: absolute;
-    right: 76px;
-    transform: translate(50%, 0);
-    margin: 12px 0;
+    display: block;
+    top: 12px;
+    margin: 0;
     font-family: 'Barlow';
     font-weight: bold;
     font-size: 24px;
+}
+
+.items > .years {
+    right: 50px;
+    width: 60px;
+    text-align: center;
+}
+
+.items > .months {
+    right: 4px;
+    width: 30px;
+    opacity: .2;
 }
 
 /*Project Link Buttons*/
@@ -461,7 +473,7 @@ nav#mobile-bottom-nav {
 }
 
 .item-buttons:hover::before {
-    width: 144px;
+    width: 160px;
     opacity: 0.16;
     background-size: 60px;
 }
@@ -469,7 +481,7 @@ nav#mobile-bottom-nav {
 /*Names of Projects*/
 .item-buttons p {
     position: absolute;
-    right: 76px;
+    right: 80px;
     transform: translate(50%, 0);
     width: max-content;
     margin: 15px 0;
@@ -547,6 +559,22 @@ nav#mobile-bottom-nav {
 
 #find-the-button .item-buttons::before {
     background-image: url(../assets/img/projects/find-the-button.svg);
+}
+
+#piston-gate-2x0625 .item-buttons::before {
+    background-image: url(../assets/img/projects/piston-gate-2x0625.svg);
+}
+
+#slime-tree-farm-2 .item-buttons::before {
+    background-image: url(../assets/img/projects/slime-tree-farm-2.svg);
+}
+
+#slime-tree-farm .item-buttons::before {
+    background-image: url(../assets/img/projects/slime-tree-farm.svg);
+}
+
+#piston-gate-2x075 .item-buttons::before {
+    background-image: url(../assets/img/projects/piston-gate-2x075.svg);
 }
 
 
