@@ -43,3 +43,7 @@ nav#mobile-bottom-nav {
 .item-buttons:hover::before {
     filter: invert(0);
 }
+
+.name-cards > p {
+    color: #fff;
+}

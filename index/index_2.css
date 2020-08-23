@@ -190,7 +190,7 @@ h1#code-end {
 nav#left-nav-container {
     position: fixed;
     width: 48px;
-    height: 120px;
+    height: auto;
     z-index: 149;
 }
 
@@ -215,21 +215,18 @@ nav#left-nav-container {
     background-image: url(../assets/svg/view-grid-outline.svg);
 }
 
+.navbt#nav-connections {
+    background-image: url(../assets/svg/account-multiple.svg);
+}
+
 #navbg {
     position: absolute;
+    top: 8px;
     width: 3px;
     height: 48px;
     background-color: #dd3d3d;
     transition: top .1s ease-in-out;
     z-index: 198;
-}
-
-#navbg.stay-logo {
-    top: 8px;
-}
-
-#navbg.stay-projects {
-    top: 64px;
 }
 
 #right-buttons-container {
@@ -308,7 +305,7 @@ nav#mobile-bottom-nav {
         display: none;
     }
     nav#left-nav-container {
-        bottom: -28px;
+        bottom: -84px;
         left: 44px;
         transform-origin: 24px 60px;
         transform: rotate(-90deg);
@@ -347,7 +344,7 @@ nav#mobile-bottom-nav {
 }
 
 #categories-container {
-    margin: 0 auto 200px auto;
+    margin: 12px auto 200px auto;
 }
 
 @media (min-width: 768px) {
@@ -364,7 +361,7 @@ nav#mobile-bottom-nav {
 
 .categories {
     width: 200px;
-    margin: 0 6px;
+    margin: 12px 6px;
     float: left;
 }
 
@@ -373,7 +370,7 @@ nav#mobile-bottom-nav {
     display: flex;
     width: 100%;
     height: 48px;
-    margin: 24px 0 12px 0;
+    margin: 0 0 12px 0;
     z-index: 50;
 }
 
@@ -428,7 +425,7 @@ nav#mobile-bottom-nav {
 }
 
 .items > .months {
-    right: 4px;
+    right: 10px;
     width: 30px;
     opacity: .2;
 }
@@ -457,7 +454,7 @@ nav#mobile-bottom-nav {
 .item-buttons::before {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     width: 56px;
     height: 56px;
     opacity: 1;
@@ -474,7 +471,7 @@ nav#mobile-bottom-nav {
 }
 
 .item-buttons:hover::before {
-    width: 160px;
+    width: 152px;
     opacity: 0.16;
     background-size: 60px;
 }
@@ -482,13 +479,14 @@ nav#mobile-bottom-nav {
 /*Names of Projects*/
 .item-buttons p {
     position: absolute;
-    right: 80px;
-    transform: translate(50%, 0);
-    width: max-content;
-    margin: 15px 0;
+    top: 15px;
+    left: 0;
+    width: 152px;
+    margin: 0;
     font-family: 'Noto Sans SC';
     font-weight: bold;
     font-size: 16px;
+    text-align: center;
     visibility: hidden;
     color: rgba(255, 255, 255, 0);
     z-index: 51;
@@ -503,16 +501,21 @@ nav#mobile-bottom-nav {
 /*Link of Projects*/
 .item-buttons a {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    top: 8px;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.16);
     background-size: 24px;
     background-repeat: no-repeat;
-    background-position: 16px;
+    background-position: center;
+    border-radius: 50%;
     filter: invert(1);
     opacity: 0;
     visibility: hidden;
     z-index: 51;
-    transition: opacity .2s cubic-bezier(.5,0,0,1) .05s, visibility 0s .1s;
+    transition: opacity .2s cubic-bezier(.5,0,0,1), visibility 0s .1s;
+    cursor: pointer;
     /* width .2s cubic-bezier(.5,0,0,1); */
 }
 
@@ -604,4 +607,184 @@ nav#mobile-bottom-nav {
 
 #carrack-film .item-buttons::before {
     background-image: url(../assets/img/projects/Carrack.svg);
+}
+
+
+
+/*Third Page*/
+
+#connections {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+#connections h1 {
+    font-family: 'Barlow', sans-serif;
+    margin: 32px auto;
+}
+
+#name-cards-container {
+    margin: 12px auto 200px auto;
+}
+
+@media (min-width: 768px) {
+    #name-cards-container {
+        width: 636px;
+    }
+}
+
+@media (max-width: 767px) {
+    #name-cards-container {
+        width: 200px;
+    }
+}
+
+.name-cards {
+    position: relative;
+    float: left;
+    height: 56px;
+    width: 200px;
+    margin: 8px 6px;
+}
+
+.cards-buttons {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: rgba(128, 128, 128, 0.33);
+    overflow: hidden;
+    transition: width .2s cubic-bezier(.5,0,0,1), 
+                border-radius .2s cubic-bezier(.5,0,0,1);
+}
+
+.cards-buttons:hover {
+    width: 200px;
+    border-radius: 0;
+}
+
+.cards-buttons::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(1) blur(0);
+    transition: 
+        top .2s cubic-bezier(.5,0,0,1),
+        left .2s cubic-bezier(.5,0,0,1),
+        width .2s cubic-bezier(.5,0,0,1),
+        height .2s cubic-bezier(.5,0,0,1),
+        border-radius .2s cubic-bezier(.5,0,0,1),
+        padding .2s cubic-bezier(.5,0,0,1),
+        filter .1s;
+    content: "";
+}
+
+.cards-buttons:hover::before {
+    top: -4px;
+    left: -4px;
+    width: 200px;
+    height: 56px;
+    border-radius: 0px;
+    padding: 4px;
+    filter: brightness(0.9) blur(4px);
+}
+
+.cards-buttons a {
+    display: block;
+    float: right;
+    height: 40px;
+    width: 40px;
+    margin: 8px 8px 8px 0;
+    background-color: rgba(255, 255, 255, 0.16);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    filter: invert(1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0, visibility 0;
+    cursor: pointer;
+}
+
+.cards-buttons:hover a {
+    transition: opacity .2s ease-in-out .1s,
+                visibility 0s .1s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.name-cards > p {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 144px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Barlow', 'Noto Sans SC';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.link-homepage {
+    background-image: url(../assets/svg/link-variant.svg);
+}
+
+.link-github {
+    background-image: url(../assets/svg/github-circle.svg);
+}
+
+.link-twitter {
+    background-image: url(../assets/svg/twitter.svg);
+}
+
+.link-insta {
+    background-image: url(../assets/svg/instagram.svg);
+}
+
+.link-youtube {
+    background-image: url(../assets/svg/youtube.svg);
+}
+
+/*Connections Lists
+
+# .cards-buttons::before {
+    background-image: url();
+}
+*/
+#c6h5no2 .cards-buttons::before {
+    background-image: url(https://avatars1.githubusercontent.com/u/19368807?s=460&u=50fba0b74c1ae22e65a473d2199f14ea7e9839ce&v=4);
+}
+
+#ethan_shen .cards-buttons::before {
+    background-image: url(https://ethans.me/img/avatar-icon.png);
+}
+
+#gztime .cards-buttons::before {
+    background-image: url(http://grakep.ch/assets/img/creations_list_square_gd_GZTinFD_450.png);
+}
+
+#hurrypeng .cards-buttons::before {
+    background-image: url(https://avatars0.githubusercontent.com/u/25132396);
+}
+
+#jakob_zero .cards-buttons::before {
+    background-image: url(../assets/img/connections/Jakobz_400x.png);
+}
+
+#pairman .cards-buttons::before {
+    background-image: url(https://avatars2.githubusercontent.com/u/18365163?s=460&u=69ee59fe72ee8321690740ee2e17723566035e7a&v=4);
+}
+
+#will_wu .cards-buttons::before {
+    background-image: url(http://grakep.ch/assets/img/creations_list_square_gd_WAD_384.png);
 }
