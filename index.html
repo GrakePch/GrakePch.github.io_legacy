@@ -80,47 +80,39 @@
 
         function isInViewPortOfOne(el) {
             const offsetTop = el.offsetTop;
-            const scrollTop = document.documentElement.scrollTop;
-            const top = offsetTop - scrollTop;
-            console.log('top', top);
-            return top;
+            return offsetTop - window.scrollY;
+        }
+
+        function SwitchingActiveNavbt(n) {
+            const navbts = document.getElementsByClassName('navbt');
+            for (let i = 0; i < navbts.length; i++) {
+                if (i == n) {
+                    navbts[i].classList.add('active');
+                } else {
+                    navbts[i].classList.remove('active');
+                }
+            }
         }
 
         function navUpdate() {
-            const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;  // viewPortHeight 兼容浏览器
-            var navbts = document.getElementsByClassName('navbt');
+            const halfViewPortHeight = 0.5 * (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight);  // viewPortHeight 兼容浏览器
 
-            if (isInViewPortOfOne(document.getElementById('projects')) > 0.5 * viewPortHeight) {
+            var enterViewportP = isInViewPortOfOne(document.getElementById('projects'));
+            var enterViewportC = isInViewPortOfOne(document.getElementById('connections'));
+
+            if (halfViewPortHeight < enterViewportP) {
                 document.getElementById('navbg').style.top = "8px";
-                for (let i = 0; i < navbts.length; i++) {
-                    if (i == 0) {
-                        navbts[i].classList.add('active');
-                    } else {
-                        navbts[i].classList.remove('active');
-                    }
-                }
+                SwitchingActiveNavbt(0);
             }
 
-            if (isInViewPortOfOne(document.getElementById('projects')) <= 0.5 * viewPortHeight) {
+            if (enterViewportP <= halfViewPortHeight && halfViewPortHeight < enterViewportC) {
                 document.getElementById('navbg').style.top = "64px";
-                for (let i = 0; i < navbts.length; i++) {
-                    if (i == 1) {
-                        navbts[i].classList.add('active');
-                    } else {
-                        navbts[i].classList.remove('active');
-                    }
-                }
+                SwitchingActiveNavbt(1);
             }
 
-            if (isInViewPortOfOne(document.getElementById('connections')) <= 0.5 * viewPortHeight) {
+            if (enterViewportC <= halfViewPortHeight) {
                 document.getElementById('navbg').style.top = "120px";
-                for (let i = 0; i < navbts.length; i++) {
-                    if (i == 2) {
-                        navbts[i].classList.add('active');
-                    } else {
-                        navbts[i].classList.remove('active');
-                    }
-                }
+                SwitchingActiveNavbt(2);
             }
 
 
