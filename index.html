@@ -31,9 +31,8 @@
     <!-- <link href="" type="text/css" rel="stylesheet" />
     <script src=""></script> -->
     <script>
-        // Prepare css link for theme toggle
-        var darkThemeOn = false;
 
+        // Prepare css link for theme toggle
         var cssLightMode = document.createElement('link');
         cssLightMode.rel = 'stylesheet';
         cssLightMode.type = 'text/css';
@@ -47,22 +46,25 @@
         cssDarkMode.id = "css-dark-mode";
 
         function enableDarkMode() {
-            document.getElementById("css-light-mode").remove();
+            if (document.contains(document.getElementById("css-light-mode"))) {
+                document.getElementById("css-light-mode").remove();
+            }
             document.getElementsByTagName('head')[0].appendChild(cssDarkMode);
             darkThemeOn = true;
         }
 
         function enableLightMode() {
-            document.getElementById("css-dark-mode").remove();
+            if (document.contains(document.getElementById("css-dark-mode"))) {
+                document.getElementById("css-dark-mode").remove();
+            }
             document.getElementsByTagName('head')[0].appendChild(cssLightMode);
             darkThemeOn = false;
         }
 
         // Initialize color themes & device theme detection
+        var darkThemeOn = false;
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
             enableDarkMode();
-        } else {
-            enableLightMode();
         }
 
         // Manually toggle color themes
@@ -147,6 +149,51 @@
                 document.getElementById("mobile-bottom-nav").style.boxShadow = "none";
             }
         }
+
+        // Initialize elements for certain language
+        var userLang = navigator.language || navigator.userLanguage;
+
+        const elmsInEnUS = document.getElementsByClassName("en-US");
+        const elmsInZhCN = document.getElementsByClassName("zh-CN");
+        
+        function showEnUSElms() {
+            for (let i = 0; i < elmsInEnUS.length; i++) {
+                elmsInEnUS[i].style.display = "inline";
+            }
+            for (let i = 0; i < elmsInZhCN.length; i++) {
+                elmsInZhCN[i].style.display = "none";
+            }
+        }
+
+        function showZhCNElms() {
+            for (let i = 0; i < elmsInZhCN.length; i++) {
+                elmsInZhCN[i].style.display = "inline";
+            }
+            for (let i = 0; i < elmsInEnUS.length; i++) {
+                elmsInEnUS[i].style.display = "none";
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function (event) {
+
+            if (userLang == "zh-CN") {
+                showZhCNElms();
+            } else {
+                showEnUSElms();
+            }
+
+        });
+
+        function langToggle() {
+            if (userLang == "zh-CN") {
+                showEnUSElms();
+                userLang = "en-US";
+            } else {
+                showZhCNElms();
+                userLang = "zh-CN";
+            }
+        }
+
     </script>
 </head>
 
@@ -177,7 +224,7 @@
         </nav>
         <div id="right-buttons-container">
             <div class="button" id="theme-toggle" onclick="themeToggle();"></div>
-            <div class="button" id="language-switch"></div>
+            <div class="button" id="language-switch" onclick="langToggle();"></div>
         </div>
 
         <!-- Mobile navigation bar -->
@@ -187,7 +234,7 @@
     </div>
 
     <div id="projects">
-        <h1>Projects</h1>
+        <h1><span class="en-US">Projects</span><span class="zh-CN">项目</span></h1>
         <div id="categories-container">
             <div class="categories" id="minecraft">
                 <div class="categ-name">
@@ -347,7 +394,7 @@
     </div>
 
     <div id="connections">
-        <h1>Connections</h1>
+        <h1><span class="en-US">Friends</span><span class="zh-CN">友链</span></h1>
         <div id="name-cards-container">
 
             <div class="name-cards" id="c6h5no2">

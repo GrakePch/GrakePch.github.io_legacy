@@ -3,6 +3,10 @@ body {
     user-select: none;
 }
 
+.zh-CN {
+    display: none;
+}
+
 h1 {
     margin: 0;
 }
@@ -347,7 +351,9 @@ nav#mobile-bottom-nav {
 }
 
 #projects h1 {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow', 'Noto Sans SC', sans-serif;
+    font-size: 32px;
+    height: 47px;
     margin: 32px auto;
 }
 
@@ -629,7 +635,9 @@ nav#mobile-bottom-nav {
 }
 
 #connections h1 {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow', 'Noto Sans SC', sans-serif;
+    font-size: 32px;
+    height: 47px;
     margin: 32px auto;
 }
 
