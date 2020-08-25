@@ -26,12 +26,12 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900" rel="stylesheet" />
-    <link href="index/index_2.css" type="text/css" rel="stylesheet" />
+    <link href="index/index.css" type="text/css" rel="stylesheet" />
     <link href="index/themes/light.css" type="text/css" rel="stylesheet" id="css-light-mode" />
     <!-- <link href="" type="text/css" rel="stylesheet" />
     <script src=""></script> -->
     <script>
-        // Prepare css link for theme toggle.
+        // Prepare css link for theme toggle
         var darkThemeOn = false;
 
         var cssLightMode = document.createElement('link');
@@ -46,17 +46,42 @@
         cssDarkMode.href = 'index/themes/dark.css';
         cssDarkMode.id = "css-dark-mode";
 
+        function enableDarkMode() {
+            document.getElementById("css-light-mode").remove();
+            document.getElementsByTagName('head')[0].appendChild(cssDarkMode);
+            darkThemeOn = true;
+        }
+
+        function enableLightMode() {
+            document.getElementById("css-dark-mode").remove();
+            document.getElementsByTagName('head')[0].appendChild(cssLightMode);
+            darkThemeOn = false;
+        }
+
+        // Initialize color themes & device theme detection
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            enableDarkMode();
+        } else {
+            enableLightMode();
+        }
+
+        // Manually toggle color themes
         function themeToggle() {
             if (darkThemeOn) {
-                document.getElementById("css-dark-mode").remove();
-                document.getElementsByTagName('head')[0].appendChild(cssLightMode);
-                darkThemeOn = false;
+                enableLightMode();
             } else {
-                document.getElementById("css-light-mode").remove();
-                document.getElementsByTagName('head')[0].appendChild(cssDarkMode);
-                darkThemeOn = true;
+                enableDarkMode();
             }
         }
+
+        // Auto detect device theme toggle
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                enableDarkMode();
+            } else {
+                enableLightMode();
+            }
+        })
 
         function fullViewport() {
             // var div = document.getElementById("viewport");
