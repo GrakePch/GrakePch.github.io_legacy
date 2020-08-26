@@ -447,6 +447,7 @@ nav#mobile-bottom-nav {
 /*Project Link Buttons*/
 .item-buttons {
     position: absolute;
+    display: flex;
     left: 0;
     width: 56px;
     height: 56px;
@@ -492,12 +493,11 @@ nav#mobile-bottom-nav {
 
 /*Names of Projects*/
 .item-buttons p {
-    position: absolute;
-    top: 15px;
+    position: relative;
     left: 0;
     width: 152px;
-    margin: 0;
-    font-family: 'Noto Sans SC';
+    margin: auto 0;
+    font-family: 'Barlow', 'Noto Sans SC';
     font-weight: bold;
     font-size: 16px;
     text-align: center;
