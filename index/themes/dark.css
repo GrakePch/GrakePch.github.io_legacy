@@ -47,3 +47,10 @@ nav#mobile-bottom-nav {
 .name-cards > p {
     color: #fff;
 }
+
+footer p {
+    color: #fff;
+}
+#footer-logo {
+    filter: invert(1);
+}
