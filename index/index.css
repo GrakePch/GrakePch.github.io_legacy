@@ -786,7 +786,7 @@ nav#mobile-bottom-nav {
 }
 
 #gztime .cards-buttons::before {
-    background-image: url(http://grakep.ch/assets/img/creations_list_square_gd_GZTinFD_450.png);
+    background-image: url(../assets/img/creations_list_square_gd_GZTinFD_450.png);
 }
 
 #hurrypeng .cards-buttons::before {
@@ -802,7 +802,7 @@ nav#mobile-bottom-nav {
 }
 
 #will_wu .cards-buttons::before {
-    background-image: url(http://grakep.ch/assets/img/creations_list_square_gd_WAD_384.png);
+    background-image: url(../assets/img/creations_list_square_gd_WAD_384.png);
 }
 
 
