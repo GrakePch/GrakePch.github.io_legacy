@@ -1,0 +1,34 @@
+/*
+
+# .cards-buttons::before {
+    background-image: url();
+}
+
+*/
+#c6h5no2 .cards-buttons::before {
+    background-image: url(https://avatars1.githubusercontent.com/u/19368807?s=460&u=50fba0b74c1ae22e65a473d2199f14ea7e9839ce&v=4);
+}
+
+#ethan_shen .cards-buttons::before {
+    background-image: url(https://ethans.me/img/avatar-icon.png);
+}
+
+#gztime .cards-buttons::before {
+    background-image: url(../assets/img/creations_list_square_gd_GZTinFD_450.png);
+}
+
+#hurrypeng .cards-buttons::before {
+    background-image: url(https://avatars0.githubusercontent.com/u/25132396);
+}
+
+#jakob_zero .cards-buttons::before {
+    background-image: url(../assets/img/connections/Jakobz_400x.png);
+}
+
+#pairman .cards-buttons::before {
+    background-image: url(https://avatars2.githubusercontent.com/u/18365163?s=460&u=69ee59fe72ee8321690740ee2e17723566035e7a&v=4);
+}
+
+#will_wu .cards-buttons::before {
+    background-image: url(../assets/img/creations_list_square_gd_WAD_384.png);
+}

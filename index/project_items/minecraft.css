@@ -1,0 +1,47 @@
+#minecraft .categ-name::before {
+    background-image: url(../../assets/svg/cube-outline.svg);
+}
+
+#bpext .item-buttons::before {
+    background-image: url(../../assets/img/projects/bpext.svg);
+}
+
+#piano-explosion-in-mc .item-buttons::before {
+    background-image: url(../../assets/img/projects/tnt180piano.svg);
+}
+
+#originium-in-mc .item-buttons::before {
+    background-image: url(../../assets/img/projects/Originuim.svg);
+}
+
+#orundum-in-mc .item-buttons::before {
+    background-image: url(../../assets/img/projects/Orundum.svg);
+}
+
+#n9squares .item-buttons::before {
+    background-image: url(../../assets/img/projects/9squares.svg);
+}
+
+#find-the-button-2 .item-buttons::before {
+    background-image: url(../../assets/img/projects/find-the-button-2.svg);
+}
+
+#find-the-button .item-buttons::before {
+    background-image: url(../../assets/img/projects/find-the-button.svg);
+}
+
+#piston-gate-2x0625 .item-buttons::before {
+    background-image: url(../../assets/img/projects/piston-gate-2x0625.svg);
+}
+
+#slime-tree-farm-2 .item-buttons::before {
+    background-image: url(../../assets/img/projects/slime-tree-farm-2.svg);
+}
+
+#slime-tree-farm .item-buttons::before {
+    background-image: url(../../assets/img/projects/slime-tree-farm.svg);
+}
+
+#piston-gate-2x075 .item-buttons::before {
+    background-image: url(../../assets/img/projects/piston-gate-2x075.svg);
+}

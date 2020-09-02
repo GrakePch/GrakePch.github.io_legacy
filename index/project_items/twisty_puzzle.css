@@ -1,0 +1,15 @@
+#twisty-puzzle .categ-name::before {
+    background-image: url(../../assets/svg/grid.svg);
+}
+
+#pentagon331 .item-buttons::before {
+    background-image: url(../../assets/img/projects/pentagon331.svg);
+}
+
+#bandaged444 .item-buttons::before {
+    background-image: url(../../assets/img/projects/bandaged444.svg);
+}
+
+#bandaged333 .item-buttons::before {
+    background-image: url(../../assets/img/projects/bandaged333.svg);
+}

@@ -546,83 +546,6 @@ nav#mobile-bottom-nav {
     background-image: url(../assets/svg/arrow-top-right.svg);
 }
 
-/*Lists of Projects*/
-#minecraft .categ-name::before {
-    background-image: url(../assets/svg/cube-outline.svg);
-}
-
-#bpext .item-buttons::before {
-    background-image: url(../assets/img/projects/bpext.svg);
-}
-
-#piano-explosion-in-mc .item-buttons::before {
-    background-image: url(../assets/img/projects/tnt180piano.svg);
-}
-
-#originium-in-mc .item-buttons::before {
-    background-image: url(../assets/img/projects/Originuim.svg);
-}
-
-#orundum-in-mc .item-buttons::before {
-    background-image: url(../assets/img/projects/Orundum.svg);
-}
-
-#n9squares .item-buttons::before {
-    background-image: url(../assets/img/projects/9squares.svg);
-}
-
-#find-the-button-2 .item-buttons::before {
-    background-image: url(../assets/img/projects/find-the-button-2.svg);
-}
-
-#find-the-button .item-buttons::before {
-    background-image: url(../assets/img/projects/find-the-button.svg);
-}
-
-#piston-gate-2x0625 .item-buttons::before {
-    background-image: url(../assets/img/projects/piston-gate-2x0625.svg);
-}
-
-#slime-tree-farm-2 .item-buttons::before {
-    background-image: url(../assets/img/projects/slime-tree-farm-2.svg);
-}
-
-#slime-tree-farm .item-buttons::before {
-    background-image: url(../assets/img/projects/slime-tree-farm.svg);
-}
-
-#piston-gate-2x075 .item-buttons::before {
-    background-image: url(../assets/img/projects/piston-gate-2x075.svg);
-}
-
-
-
-#twisty-puzzle .categ-name::before {
-    background-image: url(../assets/svg/grid.svg);
-}
-
-#pentagon331 .item-buttons::before {
-    background-image: url(../assets/img/projects/pentagon331.svg);
-}
-
-#bandaged444 .item-buttons::before {
-    background-image: url(../assets/img/projects/bandaged444.svg);
-}
-
-#bandaged333 .item-buttons::before {
-    background-image: url(../assets/img/projects/bandaged333.svg);
-}
-
-
-
-#indie-short .categ-name::before {
-    background-image: url(../assets/svg/movie.svg);
-}
-
-#carrack-film .item-buttons::before {
-    background-image: url(../assets/img/projects/Carrack.svg);
-}
-
 
 
 /*Third Page*/
@@ -769,40 +692,6 @@ nav#mobile-bottom-nav {
 
 .link-youtube {
     background-image: url(../assets/svg/youtube.svg);
-}
-
-/*Connections Lists
-
-# .cards-buttons::before {
-    background-image: url();
-}
-*/
-#c6h5no2 .cards-buttons::before {
-    background-image: url(https://avatars1.githubusercontent.com/u/19368807?s=460&u=50fba0b74c1ae22e65a473d2199f14ea7e9839ce&v=4);
-}
-
-#ethan_shen .cards-buttons::before {
-    background-image: url(https://ethans.me/img/avatar-icon.png);
-}
-
-#gztime .cards-buttons::before {
-    background-image: url(../assets/img/creations_list_square_gd_GZTinFD_450.png);
-}
-
-#hurrypeng .cards-buttons::before {
-    background-image: url(https://avatars0.githubusercontent.com/u/25132396);
-}
-
-#jakob_zero .cards-buttons::before {
-    background-image: url(../assets/img/connections/Jakobz_400x.png);
-}
-
-#pairman .cards-buttons::before {
-    background-image: url(https://avatars2.githubusercontent.com/u/18365163?s=460&u=69ee59fe72ee8321690740ee2e17723566035e7a&v=4);
-}
-
-#will_wu .cards-buttons::before {
-    background-image: url(../assets/img/creations_list_square_gd_WAD_384.png);
 }
 
 

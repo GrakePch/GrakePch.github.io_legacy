@@ -1,0 +1,7 @@
+#indie-short .categ-name::before {
+    background-image: url(../../assets/svg/movie.svg);
+}
+
+#carrack-film .item-buttons::before {
+    background-image: url(../../assets/img/projects/Carrack.svg);
+}
