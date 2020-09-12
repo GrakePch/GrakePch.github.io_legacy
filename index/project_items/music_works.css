@@ -1,0 +1,15 @@
+#music-works .categ-name::before {
+    background-image: url(../../assets/svg/music-note.svg);
+}
+
+#bs-shield-op-rise .item-buttons::before {
+    background-image: url(../../assets/img/projects/bs-shield-op-rise.svg);
+}
+
+#impr-permutation .item-buttons::before {
+    background-image: url(../../assets/img/projects/impr-permutation.svg);
+}
+
+#impr-wave-particle .item-buttons::before {
+    background-image: url(../../assets/img/projects/impr-wave-particle.svg);
+}

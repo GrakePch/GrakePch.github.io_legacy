@@ -358,7 +358,7 @@ nav#mobile-bottom-nav {
 }
 
 #categories-container {
-    margin: 12px auto 200px auto;
+    margin: 24px auto 200px auto;
 }
 
 @media (min-width: 768px) {
@@ -369,13 +369,20 @@ nav#mobile-bottom-nav {
 
 @media (max-width: 767px) {
     #categories-container {
-        width: 200px;
+        width: 212px;
     }
+}
+
+.cate-cols {
+    float: left;
+    width: 200px;
+    height: auto;
+    padding: 0 6px;
 }
 
 .categories {
     width: 200px;
-    margin: 12px 6px;
+    margin-bottom: 36px;
     float: left;
 }
 
@@ -442,6 +449,11 @@ nav#mobile-bottom-nav {
     right: 10px;
     width: 30px;
     opacity: .2;
+}
+
+.items > .new-add {
+    color: #dd3d3d;
+    opacity: .9;
 }
 
 /*Project Link Buttons*/
@@ -743,4 +755,3 @@ footer a:hover {
         padding-bottom: 64px;
     }
 }
-
