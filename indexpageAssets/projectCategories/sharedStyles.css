@@ -23,7 +23,23 @@ body {
 
 #projects-list {
     width: 75vw;
+    max-width: 1440px;
     margin: 0 auto;
+}
+
+.timeline-line {
+    width: 1rem;
+    margin: 1rem auto;
+    background-color: #e1e3e5;
+}
+
+.timeline-date > h1 {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.timeline-date span{
+    color: #c1c3c5;
 }
 
 .project-item {
@@ -58,6 +74,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .timeline-line {
+        height: 8rem;
+    }
+
     .project-item {
         flex-direction: column;
         height: auto;
@@ -78,6 +98,10 @@ body {
 }
 
 @media (min-width: 768px) {
+    .timeline-line {
+        height: 16rem;
+    }
+
     .project-item {
         flex-direction: row;
         height: 32vw;

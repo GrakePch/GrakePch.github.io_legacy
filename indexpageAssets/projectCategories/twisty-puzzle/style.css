@@ -1,3 +1,17 @@
+/*pentagon331*/
+
+#pentagon331 {
+    --box-shadow-color: #3e95ec;
+}
+
+#pentagon331 > .project-img {
+    background-image: url(img/pentagon331-cover.png);
+}
+
+#pentagon331 > .project-info {
+    background-image: url(../../../assets/img/projects/pentagon331.svg);
+}
+
 /*bandaged444*/
 
 #bandaged444 {
@@ -15,7 +29,7 @@
 /*bandaged333*/
 
 #bandaged333 {
-    --box-shadow-color: #fa8b3c;
+    --box-shadow-color: #fc8148;
 }
 
 #bandaged333 > .project-img {
