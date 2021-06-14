@@ -28,25 +28,22 @@ body {
 
 .project-item {
     display: flex;
-    flex-direction: row;
-    height: 32vw;
     margin: 1rem auto;
     background-color: #e1e3e5;
-    box-shadow: 0 0 0 0 #50c287;
+    /* --box-shadow-color: #50c287; */
+    box-shadow: 0 0 0 0 var(--box-shadow-color);
     cursor: pointer;
     transition: filter .2s cubic-bezier(.5,0,0,1), transform .2s cubic-bezier(.5,0,0,1), box-shadow .2s cubic-bezier(.5,0,0,1);
 }
 
 .project-item:hover {
     transform: translate(-.5rem, -.5rem);
-    box-shadow: 1rem 1rem 0 0 #50c287;
+    box-shadow: 1rem 1rem 0 0 var(--box-shadow-color);
     /* background-color: #d4d6d8; */
     filter: brightness(1.05) contrast(.9);
 }
 
 .project-img {
-    height: 100%;
-    width: 56.9vw;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -54,13 +51,50 @@ body {
 
 .project-info {
     position: relative;
-    width: calc(18.1vw - 2rem);
     padding: 1rem;
-    padding-top: calc(60px + 2rem);
-    background-image: url(../../assets/img/projects/bandaged444.svg);
+    padding-bottom: calc(1rem + 32px);
     background-repeat: no-repeat;
     background-size: 60px;
-    background-position: 1rem 1rem;
+}
+
+@media (max-width: 768px) {
+    .project-item {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .project-img {
+        height: 42.2vw;
+        width: 100%;
+    }
+
+    .project-info {
+        height: auto;
+        width: auto;
+        padding-top: 1rem;
+        padding-right: calc(60px + 2rem);
+        background-position: calc(100% - 1rem) 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .project-item {
+        flex-direction: row;
+        height: 32vw;
+    }
+
+    .project-img {
+        height: 100%;
+        width: 56.9vw;
+    }
+    
+    .project-info {
+        height: auto;
+        width: calc(18.1vw - 2rem);
+        padding-top: calc(60px + 2rem);
+        padding-right: 1rem;
+        background-position: 1rem 1rem;
+    }
 }
 
 .project-info > h1 {

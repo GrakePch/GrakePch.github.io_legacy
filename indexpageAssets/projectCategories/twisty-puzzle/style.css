@@ -1,3 +1,27 @@
+/*bandaged444*/
+
+#bandaged444 {
+    --box-shadow-color: #50c287;
+}
+
 #bandaged444 > .project-img {
     background-image: url(img/bandaged444-cover.jpg);
+}
+
+#bandaged444 > .project-info {
+    background-image: url(../../../assets/img/projects/bandaged444.svg);
+}
+
+/*bandaged333*/
+
+#bandaged333 {
+    --box-shadow-color: #fa8b3c;
+}
+
+#bandaged333 > .project-img {
+    background-image: url(img/bandaged333-cover.png);
+}
+
+#bandaged333 > .project-info {
+    background-image: url(../../../assets/img/projects/bandaged333.svg);
 }
