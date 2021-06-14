@@ -105,11 +105,13 @@ body {
     .project-item {
         flex-direction: row;
         height: 32vw;
+        max-height: 614.4px;
     }
 
     .project-img {
         height: 100%;
         width: 56.9vw;
+        max-width: 1092.48px;
     }
     
     .project-info {
