@@ -1,0 +1,49 @@
+footer {
+    margin-top: -1rem;
+}
+
+.monochrome-grake-logo {
+    display: block;
+    height: 18.75rem;
+    width: 18.75rem;
+    margin: 0 auto;
+    background-image: url(../logo/GKP-2106-radiation-black.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(97%) sepia(5%) saturate(83%) hue-rotate(169deg) brightness(97%) contrast(87%);
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    margin: 2rem auto;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.footer-link > li {
+    width: max-content;
+    margin: 0;
+}
+
+.footer-link a {
+    text-decoration: underline;
+    font-weight: 600;
+    color: inherit;
+}
+
+.footer-link a:hover {
+    opacity: .75;
+}
+
+.footer-link > li:not(:last-child)::after {
+    margin: 0 .5rem;
+    content: "/";
+}
+
+.footer-copyright {
+    width: max-content;
+    margin: 2rem auto;
+}
