@@ -4,14 +4,16 @@
 
 @media (max-width: 384px) {
     .timeline-begin {
-        height: 2.25rem;
-        margin: calc(50vh - 1.875rem) auto 0 auto;
-        padding: .75rem 1.125rem;
+        --font-size: .75rem;
     }
 
     .timeline-begin > h1 {
         font-size: 1.5rem;
     }
+}
+
+.timeline-begin::before {
+    background-image: url(../../../assets/svg/grid.svg);
 }
 
 /*pentagon331*/
