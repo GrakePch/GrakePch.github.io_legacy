@@ -21,6 +21,14 @@ body {
     font-family: 'Barlow', 'Noto Sans SC', sans-serif;
 }
 
+hr {
+    height: 1px;
+    margin: 0 6px;
+    background-color: #000;
+    opacity: .33;
+    border: none;
+}
+
 .welcome-page {
     display: flex;
     flex-direction: column;
@@ -43,7 +51,7 @@ body {
     z-index: 49;
 } */
 
-.title-container {
+/* .title-container {
     width: 75vw;
     max-width: 1440px;
 }
@@ -51,7 +59,7 @@ body {
 .title-container > h1 {
     color: #3e3e3e;
     font-size: 7rem;
-}
+} */
 
 .timeline-begin {
     --font-size: 1rem;
@@ -92,6 +100,74 @@ body {
     margin: 0 auto 1rem auto;
     background-color: #e1e3e5;
 } */
+
+/*Navigation*/
+
+.left-nav {
+    position: fixed;
+    top: 50vh;
+    left: 8px;
+    transform: translateY(-50%);
+    height: max-content;
+    width: 48px;
+    z-index: 999;
+}
+
+.icon-btn {
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+    /* transition: background-color .2s; */
+    transition: height .2s, visibility .2s, opacity .2s;
+}
+
+.icon-btn.hidden {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.icon-btn::before {
+    position: absolute;
+    margin: 12px 0 0 12px;
+    width: 24px;
+    height: 24px;
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.icon-btn:hover {
+    /* background-color: rgba(128, 128, 128, .1); */
+    filter: invert(33%) sepia(10%) saturate(6408%) hue-rotate(324deg) brightness(107%) contrast(103%);
+}
+
+.icon-btn:active {
+    /* background-color: rgba(128, 128, 128, .2); */
+}
+
+.logo-btn::before {
+    background-image: url(../../logo/GKP-2003-mainlogo.svg);
+    transform: rotate(-45deg);
+    background-size: 18px;
+}
+
+.back-to-top::before {
+    background-image: url(../../assets/svg/page-first.svg);
+    transform: rotate(90deg);
+}
+
+.forward-to-bottom::before {
+    background-image: url(../../assets/svg/page-first.svg);
+    transform: rotate(-90deg);
+}
+
+
+/**/
 
 #projects-list {
     width: 75vw;
