@@ -1,3 +1,19 @@
+/* .welcome-page::before {
+    content: "Twisty Puzzle Design";
+} */
+
+@media (max-width: 384px) {
+    .timeline-begin {
+        height: 2.25rem;
+        margin: calc(50vh - 1.875rem) auto 0 auto;
+        padding: .75rem 1.125rem;
+    }
+
+    .timeline-begin > h1 {
+        font-size: 1.5rem;
+    }
+}
+
 /*pentagon331*/
 
 #pentagon331 {
