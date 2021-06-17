@@ -17,31 +17,37 @@ for (let i = 0; i < elesOfForwardToBottom.length; i++) {
     });
 }
 
-function updateLeftNav() {
-    if (window.scrollY > 1) {
-        for (let i = 0; i < elesOfBackToTop.length; i++) {
-            elesOfBackToTop[i].classList.remove("hidden");
-        }
-    }
-    else {
+function updateNav() {
+    if (window.scrollY <= 1) {
+
         for (let i = 0; i < elesOfBackToTop.length; i++) {
             elesOfBackToTop[i].classList.add("hidden");
         }
-    }
+        document.getElementsByClassName("bottom-nav")[0].classList.remove("floating");
 
-    if ((window.innerHeight + window.scrollY + 1) >= document.body.offsetHeight) {
+    }
+    else if ((window.innerHeight + window.scrollY + 1) >= document.body.offsetHeight) {
+
         for (let i = 0; i < elesOfForwardToBottom.length; i++) {
             elesOfForwardToBottom[i].classList.add("hidden");
         }
+        document.getElementsByClassName("bottom-nav")[0].classList.remove("floating");
+
     }
     else {
+
+        for (let i = 0; i < elesOfBackToTop.length; i++) {
+            elesOfBackToTop[i].classList.remove("hidden");
+        }
         for (let i = 0; i < elesOfForwardToBottom.length; i++) {
             elesOfForwardToBottom[i].classList.remove("hidden");
         }
+        document.getElementsByClassName("bottom-nav")[0].classList.add("floating");
+
     }
 }
 
 setTimeout(function () {
-    updateLeftNav();
-    window.addEventListener('scroll', updateLeftNav);
+    updateNav();
+    window.addEventListener('scroll', updateNav);
 }, 500);

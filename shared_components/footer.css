@@ -50,3 +50,16 @@ footer {
     margin: 1rem auto;
     margin-bottom: 2rem;
 }
+
+
+@media (max-width: 768px) {
+    footer {
+        padding-bottom: calc(48px + 2rem);
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        padding-bottom: 0;
+    }
+}
