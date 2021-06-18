@@ -1,3 +1,8 @@
+/*Initialization*/
+
+var styleElem = document.head.appendChild(document.createElement("style"));
+
+
 /*Button for 'Back to top' and 'Forward to bottom'*/
 
 var elesOfBackToTop = document.getElementsByClassName("back-to-top");
@@ -13,6 +18,7 @@ for (let i = 0; i < elesOfForwardToBottom.length; i++) {
         document.getElementsByTagName('footer')[0].scrollIntoView({ behavior: 'smooth' });
     });
 }
+
 
 /*Update visibility of buttons and navs*/
 
@@ -59,7 +65,6 @@ setTimeout(function () {
 
 var isSettingsDrawerOn = false;
 var SettingsDrawerElem = document.querySelector(".settings-drawer");
-var styleElem = document.head.appendChild(document.createElement("style"));
 
 function openSettingsDrawer() {
     SettingsDrawerElem.classList.remove("hidden");
@@ -98,18 +103,24 @@ window.addEventListener('click', () => {
     }
 });
 
+
 /*Bottom setting section*/
 
 var isBottomSettingsExpanded = false;
-var bottomSettingsElem = document.getElementsByClassName("settings-section")[0];
+var bottomSettingsElem = document.querySelector(".bottom-nav > .settings-section");
+var bottomMainSectionElem = document.querySelector(".bottom-nav > .main-section");
 
 function expandBottomSettings() {
     bottomSettingsElem.classList.remove("collapse");
+    styleElem.innerHTML = ".icon-btn.settings::before {transform: rotate(-30deg);}";
+    bottomMainSectionElem.style.opacity = "0";
     isBottomSettingsExpanded = true;
 }
 
 function collapseBottomSetting() {
     bottomSettingsElem.classList.add("collapse");
+    styleElem.innerHTML = ".icon-btn.settings::before {transform: rotate(0);}";
+    bottomMainSectionElem.style.opacity = "1";
     isBottomSettingsExpanded = false;
 }
 
@@ -130,8 +141,8 @@ window.addEventListener('scroll', () => {
 });
 
 var isOnBtmNav = false;
-document.querySelector(".bottom-nav").onmouseover = function() {isOnBtmNav = true;};
-document.querySelector(".bottom-nav").onmouseout = function() {isOnBtmNav = false;};
+document.querySelector(".bottom-nav").onmouseover = function () { isOnBtmNav = true; };
+document.querySelector(".bottom-nav").onmouseout = function () { isOnBtmNav = false; };
 window.addEventListener('click', () => {
     if (!isOnBtmNav && isBottomSettingsExpanded) {
         collapseBottomSetting();
@@ -145,4 +156,4 @@ window.addEventListener('click', () => {
 
 console.log(localStorage.getItem("CurrentTheme"));
 
-/*Initialization*/
+

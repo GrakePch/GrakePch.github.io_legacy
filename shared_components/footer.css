@@ -36,11 +36,11 @@ footer {
     color: inherit;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .footer-link a:active {
         color: #dd3d3d;
     }
-}
+} */
 
 @media (min-width: 768px) {
     .footer-link a:hover {
