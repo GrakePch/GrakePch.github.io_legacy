@@ -29,6 +29,8 @@
     
     <link href="../index/project_categories/sharedStyles.css" type="text/css" rel="stylesheet" />
     <link href="../index/project_categories/twisty-puzzle-design/style.css" type="text/css" rel="stylesheet" />
+
+    <link href="../shared_components/floating-nav.css" type="text/css" rel="stylesheet" />
     <link href="../shared_components/footer.css" type="text/css" rel="stylesheet" />
 
 </head>
@@ -50,11 +52,28 @@
         <a class="icon-btn forward-to-bottom"></a>
     </nav>
 
+    <div class="right-settings">
+        <a class="icon-btn settings"></a>
+        <div class="settings-drawer hidden">
+            <a class="icon-btn theme-toggle"></a>
+            <a class="icon-btn lang-toggle"></a>
+        </div>
+    </div>
+
     <nav class="bottom-nav">
-        <a class="icon-btn logo-btn" href="../index.html"></a>
-        <hr>
-        <a class="icon-btn back-to-top hidden"></a>
-        <a class="icon-btn forward-to-bottom"></a>
+        <div class="main-section">
+            <a class="icon-btn logo-btn" href="../index.html"></a>
+            <hr>
+            <a class="icon-btn back-to-top hidden"></a>
+            <a class="icon-btn forward-to-bottom"></a>
+        </div>
+        <div class="settings-section collapse">
+            <a class="icon-btn settings"></a>
+            <div class="btm-settings-drawer">
+                <a class="icon-btn theme-toggle"></a>
+                <a class="icon-btn lang-toggle"></a>
+            </div>
+        </div>
     </nav>
 
     <div id="projects-list">
@@ -129,4 +148,5 @@
     </footer>
 
     <script src="../index/project_categories/sharedScript.js"></script>
+    <script src="../shared_components/floating-nav.js"></script>
 </body>

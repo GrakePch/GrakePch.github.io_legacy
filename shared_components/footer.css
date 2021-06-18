@@ -36,8 +36,16 @@ footer {
     color: inherit;
 }
 
-.footer-link a:hover {
-    color: #dd3d3d;
+@media (max-width: 768px) {
+    .footer-link a:active {
+        color: #dd3d3d;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-link a:hover {
+        color: #dd3d3d;
+    }
 }
 
 .footer-link > li:not(:last-child)::after {

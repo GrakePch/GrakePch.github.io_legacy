@@ -1,0 +1,225 @@
+.icon-btn {
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+    /* transition: background-color .2s; */
+    transition: height .2s, width .2s, visibility .2s, opacity .2s;
+}
+
+.icon-btn.hidden {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.icon-btn::before {
+    position: absolute;
+    margin: 12px;
+    width: 24px;
+    height: 24px;
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+@media (max-width: 768px) {
+    .icon-btn:active {
+        filter: invert(33%) sepia(10%) saturate(6408%) hue-rotate(324deg) brightness(107%) contrast(103%);
+    }
+}
+
+@media (min-width: 768px) {
+    .icon-btn:hover {
+        filter: invert(33%) sepia(10%) saturate(6408%) hue-rotate(324deg) brightness(107%) contrast(103%);
+    }
+}
+
+
+/*Floating Navigation on the Left*/
+
+.left-nav {
+    position: fixed;
+    top: 50vh;
+    left: 8px;
+    transform: translateY(-50%);
+    height: max-content;
+    width: 48px;
+    z-index: 999;
+}
+
+.logo-btn::before {
+    background-image: url(../logo/GKP-2003-mainlogo.svg);
+    transform: rotate(-45deg);
+    background-size: 18px;
+}
+
+.back-to-top::before {
+    background-image: url(../assets/svg/page-first.svg);
+    transform: rotate(90deg);
+}
+
+.forward-to-bottom::before {
+    background-image: url(../assets/svg/page-first.svg);
+    transform: rotate(-90deg);
+}
+
+/*Floating Settings on the Right*/
+
+.right-settings {
+    position: fixed;
+    top: 50vh;
+    right: 8px;
+    transform: translateY(-50%);
+    height: max-content;
+    width: 48px;
+    z-index: 999;
+}
+
+.settings-drawer {
+    height: 96px;
+    background-color: #3e3e3e;
+    visibility: visible;
+    transition: all .2s cubic-bezier(.5,0,0,1);
+}
+
+.settings-drawer .icon-btn {
+    filter: invert(1);
+}
+
+.settings-drawer .icon-btn:hover {
+    opacity: .75;
+}
+
+.settings-drawer.hidden {
+    height: 0;
+    visibility: hidden;
+}
+
+.settings-drawer.hidden .icon-btn {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.settings::before {
+    background-image: url(../assets/svg/cog-outline.svg);
+    transition: transform .2s cubic-bezier(.5,0,0,1);
+}
+
+.theme-toggle::before {
+    background-image: url(../assets/svg/circle-half-full.svg);
+}
+
+.lang-toggle::before {
+    background-image: url(../assets/svg/web.svg);
+}
+
+/*Floating Navigation on the Bottom (Mobile View)*/
+
+.bottom-nav {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 48px;
+    width: calc(100% - 3rem);
+    background-color: #e1e3e5;
+    box-shadow: none;
+    z-index: 1000;
+    transition: transform .2s cubic-bezier(.5,0,0,1), box-shadow .2s cubic-bezier(.5,0,0,1);
+}
+
+.bottom-nav.floating {
+    transform: translate(calc(-50% - .5rem), -.5rem);
+    box-shadow: 1rem 1rem 0 0 rgba(0, 0, 0, .17);
+}
+
+.main-section {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    height: 48px;
+    width: 100%;
+    pointer-events: none;
+}
+
+.main-section > .icon-btn {
+    pointer-events: auto;
+}
+
+.main-section > .icon-btn.hidden {
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.main-section > hr {
+    width: 1px;
+    height: 36px;
+    margin: 6px 0;
+}
+
+/*Bottom setting section*/
+.settings-section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    width: 100%;
+    background-color: #e1e3e5;
+    transition: width .2s cubic-bezier(.5,0,0,1);
+    z-index: 1200;
+}
+
+.settings-section.collapse {
+    width: 48px;
+}
+
+.btm-settings-drawer {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 48px);
+    background-color: #3e3e3e;
+}
+
+.btm-settings-drawer .icon-btn {
+    filter: invert(1);
+}
+
+.settings-section.collapse > .btm-settings-drawer .icon-btn {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/**/
+
+@media (max-width: 768px) {
+    .left-nav {
+        display: none;
+    }
+
+    .right-settings {
+        display: none;
+    }
+
+    .bottom-nav {
+        display: block;
+    }    
+}
+
+@media (min-width: 768px) {
+    .left-nav {
+        display: block;
+    }
+
+    .right-settings {
+        display: block;
+    }
+
+    .bottom-nav {
+        display: none;
+    }
+}
