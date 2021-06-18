@@ -6,7 +6,7 @@ footer {
 .monochrome-grake-logo {
     display: block;
     height: 18.75rem;
-    width: 18.75rem;
+    width: 15rem;
     margin: 0 auto;
     background-image: url(../logo/GKP-2106-radiation-black.svg);
     background-size: cover;
@@ -37,7 +37,7 @@ footer {
 }
 
 .footer-link a:hover {
-    opacity: .75;
+    color: #dd3d3d;
 }
 
 .footer-link > li:not(:last-child)::after {

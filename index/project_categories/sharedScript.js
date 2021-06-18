@@ -28,6 +28,9 @@ function updateNav() {
     }
     else if ((window.innerHeight + window.scrollY + 1) >= document.body.offsetHeight) {
 
+        for (let i = 0; i < elesOfBackToTop.length; i++) {
+            elesOfBackToTop[i].classList.remove("hidden");
+        }
         for (let i = 0; i < elesOfForwardToBottom.length; i++) {
             elesOfForwardToBottom[i].classList.add("hidden");
         }
@@ -51,3 +54,5 @@ setTimeout(function () {
     updateNav();
     window.addEventListener('scroll', updateNav);
 }, 500);
+
+console.log(localStorage.getItem("CurrentTheme"));

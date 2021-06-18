@@ -58,6 +58,12 @@
             }
             document.getElementsByTagName('head')[0].appendChild(cssDarkMode);
             darkThemeOn = true;
+            if (!window.localStorage) {
+                alert("The browser does not support localstorage");
+                return false;
+            } else {
+                localStorage.setItem("CurrentTheme", "dark");
+            }
         }
 
         function enableLightMode() {
@@ -66,6 +72,12 @@
             }
             document.getElementsByTagName('head')[0].appendChild(cssLightMode);
             darkThemeOn = false;
+            if (!window.localStorage) {
+                alert("The browser does not support localstorage");
+                return false;
+            } else {
+                localStorage.setItem("CurrentTheme", "light");
+            }
         }
 
         // Initialize color themes & device theme detection
