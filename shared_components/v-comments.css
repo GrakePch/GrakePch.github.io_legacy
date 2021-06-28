@@ -3,12 +3,17 @@
     background-color: #e1e3e5;
 }
 
-.vwrap {
+#vcomments .vwrap {
     border: none;
     border-radius: 0;
     padding: 0;
 }
 
-.status-bar, .veditor, .vinput, p, pre code {
+#vcomments .status-bar, #vcomments .veditor, #vcomments .vinput, #vcomments p, #vcomments pre code {
     color: #000;
+}
+
+#vcomments .vcards .vcard .vimg {
+    border: none;
+    padding: 0;
 }
