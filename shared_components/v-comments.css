@@ -1,0 +1,14 @@
+#vcomments {
+    padding: 1rem;
+    background-color: #e1e3e5;
+}
+
+.vwrap {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.status-bar, .veditor, .vinput, p, pre code {
+    color: #000;
+}
