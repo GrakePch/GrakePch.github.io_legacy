@@ -62,16 +62,60 @@
     padding: 1rem;
 }
 
-/*Row Container in Edit Section*/
-#vcomments .vedit .vrow {
+/* Row Container in Edit Section */
+/* #vcomments .vedit .vrow {
     padding-left: 1rem;
     padding-right: 1rem;
-}
+} */
 
 /*Row Container after Edit Section*/
-#vcomments .vwrap > .vrow {
+/* #vcomments .vwrap > .vrow {
     padding-left: 0;
     padding-right: 0;
+} */ 
+
+/*Emoji Button*/
+#vcomments .vemoji-btn svg{
+    visibility: hidden;
+}
+
+#vcomments .vemoji-btn::before {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background-image: url(../assets/svg/emoticon-outline.svg);
+}
+
+/*Preview Button*/
+#vcomments .vpreview-btn svg{
+    visibility: hidden;
+}
+
+#vcomments .vpreview-btn::before {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background-image: url(../assets/svg/comment-search-outline.svg);
+}
+
+/*Submit Button*/
+#vcomments .vsubmit {
+    padding-right: calc(2.25em + 24px);
+    border: none;
+    color: #000;
+    background-image: url(../assets/svg/send-outline.svg);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 4.25em calc(50% - 12px);
+    transition-duration: 0s;
+}
+
+@media (min-width: 768px) {
+    #vcomments .vsubmit:hover {
+        filter: invert(33%) sepia(10%) saturate(6408%) hue-rotate(324deg) brightness(107%) contrast(103%);
+    }
 }
 
 /*Emoji Picker*/
