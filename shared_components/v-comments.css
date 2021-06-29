@@ -17,3 +17,17 @@
     border: none;
     padding: 0;
 }
+
+#vcomments .vedit {
+    background-color: #f4f4f4;
+    padding-top: 0;
+}
+
+#vcomments .veditor {
+    padding: 1rem;
+}
+
+#vcomments .vrow {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
