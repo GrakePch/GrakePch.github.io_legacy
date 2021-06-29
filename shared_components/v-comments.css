@@ -76,7 +76,7 @@
 }
 
 /*Comment Text Area*/
-#vcomments .vcards .vcard .vh {
+#vcomments .vcards .vcard:not(:last-child) .vh {
     border-bottom: 1px solid rgba(0, 0, 0, .33);
 }
 
@@ -92,6 +92,7 @@
 }
 
 #vcomments .vcards .vcard .vat::before {
+    content: "";
     position: absolute;
     opacity: 1;
     width: 24px;
