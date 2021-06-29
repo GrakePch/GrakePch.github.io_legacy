@@ -1,14 +1,14 @@
 #vcomments {
-    padding: 1rem;
+    padding: 0;
     background-color: #e1e3e5;
 }
 
-/*Container of Header & Edit Section*/
+/*Container of Edit Section*/
 #vcomments .vwrap {
     background-color: #f4f4f4;
     border: none;
     border-radius: 0;
-    padding: 0;
+    padding: 1rem;
 }
 
 /*Primary Font*/
@@ -23,9 +23,8 @@
 
 
 /*Header*/
-#vcomments .vheader {
-    display: flex;
-}
+/* #vcomments .vheader {
+} */
 
 /*Header Input*/
 #vcomments .vheader input {
@@ -46,9 +45,9 @@
     }
 }
 
-@media (max-width: 520px) {
+/* @media (max-width: 520px) {
 
-}
+} */
 
 /*Edit Section*/
 #vcomments .vedit {
@@ -79,6 +78,17 @@
     background-color: #f4f4f4;
 }
 
+/*Comment Count*/
+#vcomments .vcount {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*Comment Section*/
+#vcomments .vcards {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
 /*Comment Avatar*/
 #vcomments .vcards .vcard .vimg {
@@ -139,4 +149,10 @@
 
 #vcomments .cancel-reply-btn {
     opacity: 0;
+}
+
+/*Powered By*/
+#vcomments .vpower {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
