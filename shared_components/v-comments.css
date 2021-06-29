@@ -115,12 +115,12 @@
     background-image: url(../assets/svg/send-outline.svg);
     background-size: 24px;
     background-repeat: no-repeat;
-    background-position: 4.25em 50%;
+    background-position: 3em 50%;
     transition-duration: 0s;
 }
 
 @media (min-width: 768px) {
-    #vcomments .vemoji-btn, #vcomments .vpreview-btn, #vcomments .vsubmit:hover {
+    #vcomments .vemoji-btn:hover, #vcomments .vpreview-btn:hover, #vcomments .vsubmit:hover {
         filter: invert(33%) sepia(10%) saturate(6408%) hue-rotate(324deg) brightness(107%) contrast(103%);
     }
 }
