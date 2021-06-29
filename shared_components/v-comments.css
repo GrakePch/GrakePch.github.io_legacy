@@ -76,8 +76,8 @@
 }
 
 /*Comment Text Area*/
-#vcomments .vcards .vcard:not(:last-child) .vh {
-    border-bottom: 1px solid rgba(0, 0, 0, .33);
+#vcomments .vcards .vcard .vh {
+    border-bottom: none;
 }
 
 /*Comment Nickname*/
@@ -88,15 +88,14 @@
 /*Comment Reply Button*/
 #vcomments .vcards .vcard .vat {
     position: relative;
-    opacity: 0;
+    color: transparent;
 }
 
 #vcomments .vcards .vcard .vat::before {
     content: "";
     position: absolute;
-    opacity: 1;
     width: 24px;
     height: 24px;
-    background-image: url(../assets/svg/cog-outline.svg);
+    background-image: url(../assets/svg/arrow-left-top.svg);
     background-position: center;
 }
