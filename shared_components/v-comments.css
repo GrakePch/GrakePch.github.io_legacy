@@ -5,10 +5,11 @@
 
 /*Container of Edit Section*/
 #vcomments .vwrap {
-    background-color: #f4f4f4;
+    margin-bottom: 0;
+    padding: 1rem;
     border: none;
     border-radius: 0;
-    padding: 1rem;
+    background-color: #f4f4f4;
 }
 
 /*Primary Font*/
@@ -40,9 +41,9 @@
         padding-left: 10px;
     }
 
-    #vcomments .vheader input:not(:last-of-type) {
+    /* #vcomments .vheader input:not(:last-of-type) {
         border-right: 1px solid rgba(0, 0, 0, .33);
-    }
+    } */
 }
 
 /* @media (max-width: 520px) {
@@ -80,6 +81,7 @@
 
 /*Comment Count*/
 #vcomments .vcount {
+    padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -102,11 +104,11 @@
 }
 
 /*Comment Nickname*/
-#vcomments .vcards .vcard .vnick {
+#vcomments .vcards .vcard .vhead > .vnick {
     font-weight: bold;
 }
 
-#vcomments .vcards .vcard .vnick:hover {
+#vcomments .vcards .vcard .vhead > .vnick:hover {
     color: #d8403c;
 }
 
@@ -135,24 +137,33 @@
 
 #vcomments .cancel-reply {
     position: relative;
+    margin-bottom: 18px;
 }
 
 #vcomments .cancel-reply::before {
     content: "";
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: -16px;
+    right: 0;
     height: 24px;
     width: 24px;
     background-image: url(../assets/svg/close.svg);
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    #vcomments .cancel-reply:hover::before {
+        filter: invert(33%) sepia(10%) saturate(6408%) hue-rotate(324deg) brightness(107%) contrast(103%);
+    }
 }
 
 #vcomments .cancel-reply-btn {
-    opacity: 0;
+    visibility: hidden;
 }
 
 /*Powered By*/
 #vcomments .vpower {
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-bottom: 1rem;
 }
