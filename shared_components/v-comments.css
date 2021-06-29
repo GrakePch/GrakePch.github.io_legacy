@@ -5,6 +5,7 @@
 
 /*Container of Header & Edit Section*/
 #vcomments .vwrap {
+    background-color: #f4f4f4;
     border: none;
     border-radius: 0;
     padding: 0;
@@ -29,21 +30,31 @@
 /*Header Input*/
 #vcomments .vheader input {
     border-bottom: none;
-    margin: 10px 5px;
+    margin: 10px 0;
     padding: 0;
     font-family: inherit;
     font-weight: bold;
 }
 
-#vcomments .vheader input:not(:last-of-type) {
-    width: calc(33.33% - 1px);
-    border-right: 1px solid rgba(0, 0, 0, .33);
+@media (min-width: 521px) {
+    #vcomments .vheader input:not(:first-of-type) {
+        padding-left: 10px;
+    }
+
+    #vcomments .vheader input:not(:last-of-type) {
+        border-right: 1px solid rgba(0, 0, 0, .33);
+    }
+}
+
+@media (max-width: 520px) {
+
 }
 
 /*Edit Section*/
 #vcomments .vedit {
-    background-color: #f4f4f4;
     padding-top: 0;
+    border-top: 1px solid rgba(0, 0, 0, .33);
+    border-bottom: 1px solid rgba(0, 0, 0, .33);
 }
 
 /*Editor*/
@@ -85,6 +96,10 @@
     font-weight: bold;
 }
 
+#vcomments .vcards .vcard .vnick:hover {
+    color: #d8403c;
+}
+
 /*Comment Reply Button*/
 #vcomments .vcards .vcard .vat {
     position: relative;
@@ -98,4 +113,30 @@
     height: 24px;
     background-image: url(../assets/svg/arrow-left-top.svg);
     background-position: center;
+}
+
+@media (min-width: 768px) {
+    #vcomments .vcards .vcard .vat:hover {
+        filter: invert(33%) sepia(10%) saturate(6408%) hue-rotate(324deg) brightness(107%) contrast(103%);
+    }
+}
+
+/*Comment Cancel Reply Button*/
+
+#vcomments .cancel-reply {
+    position: relative;
+}
+
+#vcomments .cancel-reply::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 24px;
+    width: 24px;
+    background-image: url(../assets/svg/close.svg);
+}
+
+#vcomments .cancel-reply-btn {
+    opacity: 0;
 }
