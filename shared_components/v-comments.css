@@ -13,21 +13,47 @@
     color: #000;
 }
 
-#vcomments .vcards .vcard .vimg {
-    border: none;
+
+/*Header*/
+#vcomments .vheader {
+    display: flex;
+}
+
+#vcomments .vheader input {
+    border-bottom: none;
+    margin: 10px 5px;
     padding: 0;
 }
 
+#vcomments .vheader input:not(:last-child) {
+    width: calc(33.33% - 1px);
+    border-right: 1px solid rgba(0, 0, 0, .33);
+}
+
+/*编辑区*/
 #vcomments .vedit {
     background-color: #f4f4f4;
     padding-top: 0;
 }
 
+/*编辑区文本框*/
 #vcomments .veditor {
     padding: 1rem;
 }
 
+/*编辑区水平排列容器*/
 #vcomments .vrow {
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+#vcomments .vemojis {
+    background-color: #f4f4f4;
+}
+
+
+/*评论区头像*/
+#vcomments .vcards .vcard .vimg {
+    border: none;
+    padding: 0;
 }
